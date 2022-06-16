@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <script src="/js/script.js" defer></script>
+    <script src="./js/app.min.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -71,7 +71,7 @@ story about us</h2>
 </div>
 <p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
 
-<div class="row about__row">
+<div class="row about-us__row">
 <div class="about-us__card col-4"><img class="about-us__pic" src="./images/src/about/fone.jpg" alt="Super Team"></div>
 <div class="about-us__card col-4"><img class="about-us__pic" src="./images/src/about/fone2.jpg" alt="Super Team"></div>
 <div class="about-us__card col-4"><img class="about-us__pic" src="./images/src/about/men.svg" alt="Super Team"></div>
@@ -142,14 +142,33 @@ amazing services</h2>
 
 <section class="reviews">
   <div class="container">
-    <div class="splide" aria-labelledby="carousel-heading">
-      <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+    <div class="splide review-slider" aria-labelledby="carousel-heading">
+    
     
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide">Slide 01</li>
-          <li class="splide__slide">Slide 02</li>
-          <li class="splide__slide">Slide 03</li>
+          <li class="splide__slide review-slide">
+<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+<div class="review-slide__content">
+  <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+  <p class="review-slide__author">Jon Doe</p>
+</div>
+          </li>
+          <li class="splide__slide review-slide">
+<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+<div class="review-slide__content">
+  <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+  <p class="review-slide__author">Deniz</p>
+</div>
+          </li>
+          <li class="splide__slide review-slide">
+<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+<div class="review-slide__content">
+  <p class="review-slide__text">Lorem ipsum dolor sit amet,  diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+  <p class="review-slide__author">Nen Bulk</p>
+</div>
+          </li>
+          
         </ul>
       </div>
     </div>
@@ -184,6 +203,44 @@ amazing services</h2>
   </div>
   
   </section>
+  
+
+  <!-- slider-man -->
+  <section class="reviews reviews_light">
+    <div class="container">
+      <div class="splide review-slider review-slider_bg" aria-labelledby="carousel-heading">
+      
+      
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide review-slide">
+  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+  <div class="review-slide__content">
+    <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+    <p class="review-slide__author">Jon Doe</p>
+  </div>
+            </li>
+            <li class="splide__slide review-slide">
+  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+  <div class="review-slide__content">
+    <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+    <p class="review-slide__author">Deniz</p>
+  </div>
+            </li>
+            <li class="splide__slide review-slide">
+  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+  <div class="review-slide__content">
+    <p class="review-slide__text">Lorem ipsum dolor sit amet,  diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+    <p class="review-slide__author">Nen Bulk</p>
+  </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
 <!-- blog -->
 <section class="blog">
