@@ -1,36 +1,7 @@
 .reviews{
-
-  
     background:#F8F8F8 ;
-}
-
-.review-slider?{
-    position: relative;
-      // padding:0 42px;
-}
-
-
-скомпоненты
-.review-slider__arrow{
-    display: flex;
-    position:absolute;
-  
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    background: none;
-    border: none;
-    align-items: center;
-    transform: translateY (-50%);
-    top:50%;
-    z-index: 1;
-
-}
-?
-.review-slider__arrow:last-child{
-    transform: translate(180);
-}
-.review-slider__slide{
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 42px;
+    &_light{
+        background: #ffff;
+    }
 }

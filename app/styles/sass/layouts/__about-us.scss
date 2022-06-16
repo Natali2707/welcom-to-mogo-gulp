@@ -4,23 +4,23 @@
     text-align: center;
     padding-top: 42px;
     padding-bottom: 108px;
-  }
-  .about__row {
+  &__row {
     position: relative;
     min-width: 100%;
   }
-  .about-us__card:nth-child(2) {
+&__card:nth-child(2) {
     position: absolute;
     transform: translate(-16px, -16px);
     opacity: 0.8;
   }
-  .about-us__card:nth-child(3) {
+&__card:nth-child(3) {
     position: absolute;
     transform: translate(165px, 129px);
     z-index: 10;
   }
-  .about-us__card:nth-child(4) {
+&__card:nth-child(4) {
     position: absolute;
     transform: translate(100px, 200px);
     z-index: 10;
   }
+}
