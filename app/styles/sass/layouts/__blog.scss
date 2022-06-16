@@ -1,0 +1,131 @@
+.blog {
+    padding: 84px 0;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog {
+      padding: 58px 0;
+    }
+  }
+  @media (max-width: 560px) {
+    .blog {
+      padding: 30px 0;
+    }
+  }
+  .blog__card {
+    margin: 0 var(--gutter);
+  }
+  @media (max-width: 768px) {
+    .blog__card {
+      margin-bottom:50px;
+    }
+  }
+  @media (max-width: 560px) {
+    .blog__card {
+      margin-bottom:30px;
+    }
+  }
+  .blog__head {
+    margin-bottom: 42px;
+  }
+  
+  .blog__card-head {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .blog__img-wrap {
+    position: relative;
+    padding-bottom: 68%;
+    overflow: hidden;
+  }
+  .blog__img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  
+  .blog__news-date {
+    position: absolute;
+    bottom: 25px;
+    left: -14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: var(--blue);
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog__news-date {
+      width: 68px;
+    height: 68px;
+    font-size: 14px;
+    }
+  }
+  .blog__news-date span {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog__news-date span {
+      font-size: 24px;}
+    }
+  .blog__card-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog__card-title{
+      font-size: 18px;
+    }
+  }
+  
+  .blog__card-descr {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  @media (max-width: 1200px) {
+    .blog__card-descr {
+      font-size: 14px;
+    }
+  }
+  .blog__info-panel {
+    display: flex;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+  
+  .blog__info-block {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 1200px) {
+    .blog__info-block {
+      font-size: 12px;
+    }
+    }
+  .blog__info-block:last-child {
+    margin-right: 0;
+  }
+  .blog__info-icon {
+    margin-right: 16px;
+    width: 32px;
+    flex-shrink: 0;
+  }

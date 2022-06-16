@@ -1,0 +1,41 @@
+:root {
+    --black: #2d3033;
+    --accent: rgba(243, 130, 129, 1);
+    --blue: rgba(149, 225, 211, 1);
+    --grey: rgba(198, 203, 205, 1);
+    --content-width: 1170px;
+    --mobile-padding: 16px;
+    --gutter: 15px;
+  }
+  
+  @media (max-width: 1200px) {
+    :root {
+      --gutter: 10px;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Raleway", sans serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--black);
+  }
+  p,
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  

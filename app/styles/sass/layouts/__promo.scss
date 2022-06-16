@@ -1,0 +1,62 @@
+
+.promo {
+    display: flex;
+    padding-top: 177px;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(
+        360deg,
+        rgba(237, 215, 137, 0.9) 0%,
+        rgba(233, 130, 131, 0.9) 100%
+      ),
+      url("/images/src/orel.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    color: #ffff;
+
+  @media (max-width: 1200px) {
+      padding-top: 120px;                 
+    }
+
+  @media (max-width: 992px) {
+      padding-top: 90px;
+    }
+  @media (max-width: 768px) {
+    .promo {
+      padding-top: 20px;
+    }
+  }
+  
+  &__subtitle {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: 64px;
+  }
+  &__title {
+    font-family: "montserrat";
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 1, 2;
+    text-transform: uppercase;
+    margin-bottom: 116px;
+  }
+  &__link {
+    display: inline-block;
+    max-width: 370px;
+    width: 100%;
+    font-family: "Raleway";
+    font-weight: 700;
+    padding: 25px 60px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    color: #ffffff;
+    transition: 0, 3s;
+    &:hover {
+      background: #fff;
+      color: #f4bf87;
+    }
+  }
+}

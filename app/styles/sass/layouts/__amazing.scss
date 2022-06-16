@@ -1,0 +1,148 @@
+.amazing {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  @media (max-width: 1200px) {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+  
+  &__head {
+    margin-bottom: 10px;
+  
+  
+  @media (max-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__card {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    display: flex;
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    @media (max-width: 560px) {
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+  }
+  
+  &__card-img {
+    padding-right: 38px;
+    align-self: flex-start;
+    width: 70px;
+    flex-shrink: 0;
+  @media (max-width: 1200px) {
+      width: 60px;
+      padding-right: 25px;
+    }
+  }
+
+  &__card-name {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+
+
+
+  
+  @media (max-width: 1200px) {
+    .amazing__card-name {
+      font-size: 18px;
+    }
+  }
+  
+  .amazing__card-desc {
+    padding: 5px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  @media (max-width: 1200px) {
+    .amazing__card-desc {
+      font-size: 14px;
+    }
+  }
+}
+// .amazing {
+//     padding-top: 50px;
+//     padding-bottom: 20px;
+//   }
+  
+//   @media (max-width: 1200px) {
+//     .amazing {
+//       padding-top: 28px;
+//       padding-bottom: 28px;
+//     }
+//   }
+//   .amazing__head {
+//     margin-bottom: 10px;
+//   }
+  
+//   @media (max-width: 1200px) {
+//     .amazing__head {
+//       margin-bottom: 40px;
+//     }
+//   }
+//   .amazing__card {
+//     margin-bottom: 70px;
+//     margin-top: 70px;
+//     display: flex;
+//   }
+  
+//   @media (max-width: 1200px) {
+//     .amazing__card {
+//       margin-bottom: 30px;
+//       margin-top: 30px;
+//     }
+//   }
+//   @media (max-width: 560px) {
+//     .amazing__card {
+//       margin-bottom: 16px;
+//       margin-top: 16px;
+//     }
+//   }
+//   .amazing__card-img {
+//     padding-right: 38px;
+//     align-self: flex-start;
+//     width: 70px;
+//     flex-shrink: 0;
+//   }
+  
+//   @media (max-width: 1200px) {
+//     .amazing__card-img {
+//       width: 60px;
+//       padding-right: 25px;
+//     }
+//   }
+//   .amazing__card-info {
+//   }
+//   .amazing__card-name {
+//     padding: 10px 0;
+//     font-weight: 700;
+//     font-size: 24px;
+//     line-height: 28px;
+//     text-transform: uppercase;
+//   }
+//   @media (max-width: 1200px) {
+//     .amazing__card-name {
+//       font-size: 18px;
+//     }
+//   }
+  
+//   .amazing__card-desc {
+//     padding: 5px 0;
+//     font-size: 18px;
+//     line-height: 21px;
+//   }
+  
+//   @media (max-width: 1200px) {
+//     .amazing__card-desc {
+//       font-size: 14px;
+//     }
+//   }

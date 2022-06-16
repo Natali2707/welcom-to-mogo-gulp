@@ -1,0 +1,26 @@
+.about-us {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 108px;
+  }
+  .about__row {
+    position: relative;
+    min-width: 100%;
+  }
+  .about-us__card:nth-child(2) {
+    position: absolute;
+    transform: translate(-16px, -16px);
+    opacity: 0.9;
+  }
+  .about-us__card:nth-child(3) {
+    position: absolute;
+    transform: translate(165px, 129px);
+    z-index: 10;
+  }
+  .about-us__card:nth-child(4) {
+    position: absolute;
+    transform: translate(100px, 200px);
+    z-index: 10;
+  }

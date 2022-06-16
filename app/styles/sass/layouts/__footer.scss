@@ -1,0 +1,126 @@
+.footer {
+    padding-top: 80px;
+  }
+  .footer__col {
+    padding-bottom: 42px;
+    flex-direction: column;
+  
+  }
+  
+  .footer__logo-link {
+  }
+  .footer__logo {
+  }
+  .footer__desc {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: var(--grey);
+  }
+  .footer__media {
+  }
+  .footer__follower-count {
+    margin-bottom: 30px;
+  }
+  .footer__follower-count .num {
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+  }
+  .footer__follower-count .letter {
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  .footer__follower-count .cta-txt {
+    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  .footer__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .footer__media-cta {
+    padding-right: 10px;
+    font-size: 13px;
+    font-style: italic;
+    color: #c6cbcd;
+  }
+  .footer__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__social-item {
+    margin-right: 10px;
+  }
+  .footer__social-item:last-child {
+    margin-right: 0;
+  }
+  .footer__social-link {
+  }
+  .footer__social-icon {
+    width: 20px;
+  }
+  .footer__subscribe {
+    display: flex;
+    margin-top: 46px;
+  }
+  
+  
+  .footer__input{
+  
+  }
+  .footer__send-form{
+  
+  }
+  
+  
+  
+  .footer__input{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer__send-form{
+    flex-grow: 1;
+    text-transform: uppercase;
+    padding:10px 16px;
+  }
+  
+  .footer__col-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .footer__news-card {
+    margin-bottom: 20px;
+  }
+  .footer__news-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .footer__see-more {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--black);
+  }
+  
+  .footer__copyright {
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    border-top: 1px solid #000;
+  }
+  
