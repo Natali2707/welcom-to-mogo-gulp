@@ -1,5 +1,5 @@
 .what {
-padding-top: 42px;
+  padding-top: 42px;
   background: url("/images/dist/what/bg.png");
   background-size: cover, cover;
   background-position: center, center;
@@ -7,12 +7,8 @@ padding-top: 42px;
   &__head {
     margin-bottom: 42px;
     @media (max-width: 1200px) {
-       margin-bottom: 28px;
-      }
-  }
- 
-  &__cards {
-   
+      margin-bottom: 28px;
+    }
   }
 
   &__card {
@@ -37,25 +33,21 @@ padding-top: 42px;
     object-fit: cover;
   }
 
-  &__info-panel {
-  }
-
   &__card-title {
     padding-bottom: 10px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    @media (max-width: 1200px){
-        font-size: 18px;
+    @media (max-width: 1200px) {
+      font-size: 18px;
     }
-        
-    }
+  }
 
   &__card-subtitle {
     text-transform: uppercase;
-    @media (max-width: 1200px){
-        font-size: 14px;
+    @media (max-width: 1200px) {
+      font-size: 14px;
     }
     &::after {
       content: "";
@@ -64,30 +56,18 @@ padding-top: 42px;
       background: var(--accent);
       height: 4px;
       margin: 32px 0;
-      @media (max-width: 1200px){
+      @media (max-width: 1200px) {
         width: 47px;
         margin: 22px 0;
-    }
+      }
     }
   }
 
   &__card-text {
     margin-bottom: 42px;
-    @media (max-width: 1200px){
-        font-size: 14px;
-        margin-bottom: 29px;
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      margin-bottom: 29px;
     }
-  }
-}
-.container {
-}
-.section-head {
-  .row {
-  }
-  .col-6 {
-  }
-  .col-md-6 {
-  }
-  .col-xs-12 {
   }
 }

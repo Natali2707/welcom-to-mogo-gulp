@@ -1,17 +1,6 @@
 .work {
   margin-bottom: 84px;
 }
-
-.work__head {
-}
-.section-head__subtitle {
-}
-.section-head__title {
-}
-.section-head__text {
-}
-.content {
-}
 .work-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -23,7 +12,6 @@
   object-fit:cover;
 }
 .work-row .work-row__item_big{
-
   grid-row-start:1 ;
   grid-row-end: 3; 
    grid-column-start: 3;
