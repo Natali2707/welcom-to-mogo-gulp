@@ -15,36 +15,57 @@
     background-repeat: no-repeat, no-repeat;
     color: #ffff;
 
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
       padding-top: 120px;                 
     }
 
-  @media (max-width: 992px) {
+     @include breakpoint(lg) {
       padding-top: 90px;
     }
-  @media (max-width: 768px) {
+       @include breakpoint(md) {
     .promo {
       padding-top: 20px;
     }
   }
   
   &__subtitle {
+    margin-top: 77px;
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 4.5vw;
   }
   &__title {
+    padding: 50px 0;
     font-family: "montserrat";
     font-weight: 700;
-    font-size: 144px;
-    line-height: 1, 2;
+    font-size:9.5vw ;
+    line-height: 2.1;
     text-transform: uppercase;
     margin-bottom: 116px;
-  }
+    @include breakpoint(xl) {
+      line-height: 1.2;
+    }
+    @include breakpoint(sm) {
+      font-size:15vw ;
+      margin-bottom: 50px;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 170px;
+        background: #fff;
+        height: 4px;
+        margin: 44px auto 0;
+        @include breakpoint(sm) {
+        width: 134px;
+        }
+      }
+    }
+
   &__link {
     display: inline-block;
     max-width: 370px;
-    width: 100%;
+    // width: 100%;
     font-family: "Raleway";
     font-weight: 700;
     padding: 25px 60px;
@@ -53,7 +74,16 @@
     text-transform: uppercase;
     border: 1px #fff solid;
     color: #ffffff;
-    transition: 0, 3s;
+    transition: 0.3s;
+    @include breakpoint(sm) {
+    // width: 284px;
+    // width: 100%;
+    font-size: 18px;
+    max-width: 225px;
+    margin: 0 10px;
+    padding:15px 30px;
+    }
+   
     &:hover {
       background: #fff;
       color: #f4bf87;

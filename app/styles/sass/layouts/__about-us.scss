@@ -1,26 +1,78 @@
 .about-us {
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 42px;
-    padding-bottom: 108px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 42px;
+  padding-bottom: 108px;
+  @include breakpoint(xl) {
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
+  @include breakpoint(sm) {
+    // flex-wrap: wrap;
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
   &__row {
     position: relative;
-    min-width: 100%;
+    @include breakpoint(sm) {
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+    }
   }
-&__card:nth-child(2) {
+  &__pic{
+display: flex;
+  }
+  &__card:first-child {
+    position: relative;
+    @include breakpoint(sm) {
+    display: none;
+    }
+  }
+  &__card:nth-child(2) {
     position: absolute;
-    transform: translate(-16px, -16px);
+    transform: translate(-6%, -6%);
     opacity: 0.8;
+    @include breakpoint(sm) {
+      display: none;
+    }
+    &:hover {
+      display: none;
+    }
   }
-&__card:nth-child(3) {
+  &__card:nth-child(3) {
     position: absolute;
-    transform: translate(165px, 129px);
+    width: 31px;
+    height: 37px;
+    top: 40%;
+    left: 12%;
     z-index: 10;
+    @include breakpoint(xl) {
+      width: 25px;
+      height: 30 px;
+    }
   }
-&__card:nth-child(4) {
+  &__card:nth-child(4) {
     position: absolute;
-    transform: translate(100px, 200px);
-    z-index: 10;
+    width: 370px;
+    top: 70%;
+    left: 7%;
+    // z-index: 10;
+    height: 28px;
+    @include breakpoint(xl) {
+      height: 23px;
+      width: 309px;
+    }
+    @include breakpoint(md) {
+      height: 20px;
+      width: 100px;
+    }
+  }
+  &__card_mobile {
+    display: none;
+    @include breakpoint(sm) {
+      display: block;
+    }
   }
 }

@@ -1,0 +1,38 @@
+.design {
+    padding-top: 42px;
+    padding-bottom: 57px;
+    margin-bottom: 99px;
+    background: url(../images/dist/design/bg.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+@include breakpoint(xl) {
+margin-bottom: 125px;
+@include breakpoint(md) {
+margin-bottom: 77px;
+}
+}
+    &__head {
+    
+    margin-bottom: 59px;
+    }
+    &__img-wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__pc-img {
+  width: calc(100% - var(--gutter) * 5);
+    }
+
+    &__phone-img {
+        position: absolute;
+        width: 20%;
+        bottom: -15%;
+        right: -5%;
+        margin-right: 40px;
+    }
+
+}
+

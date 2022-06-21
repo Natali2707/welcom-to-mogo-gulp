@@ -8,7 +8,7 @@
     --gutter: 15px;
   }
   
-  @media (max-width: 1200px) {
+  @include breakpoint(xl) {
     :root {
       --gutter: 10px;
     }

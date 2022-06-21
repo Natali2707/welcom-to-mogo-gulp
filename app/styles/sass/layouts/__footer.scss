@@ -8,6 +8,10 @@
   }
   
   .footer__logo-link {
+    @include breakpoint(sm) {
+      display: flex;
+    justify-content: center;
+    }
   }
   .footer__logo {
   }
@@ -18,26 +22,49 @@
     color: var(--grey);
   }
   .footer__media {
+    @include breakpoint(sm) {
+    
+    }
   }
   .footer__follower-count {
     margin-bottom: 30px;
+    @include breakpoint(sm) {
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
   }
   .footer__follower-count .num {
     font-weight: 700;
     font-size: 36px;
     font-style: normal;
+    @include breakpoint(xl) {
+      font-size: 30px;
+    }
+    @include breakpoint(sm) {
+      font-size: 24px; 
+      line-height: 55px;
+    }
   }
   .footer__follower-count .letter {
     font-weight: 700;
     font-size: 18px;
     font-style: normal;
     text-transform: uppercase;
+    @include breakpoint(sm) {
+    font-size: 14px;
+    line-height: 30px;
+    }
   }
   .footer__follower-count .cta-txt {
     font-weight: 500;
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
+    @include breakpoint(sm) {
+    font-size: 14px;
+    line-height: 30px;
+    }
   }
   
   .footer__socials {
@@ -45,6 +72,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    @include breakpoint(sm) {
+    // flex-wrap: nowrap;
+    justify-content:space-around;
+    }
   }
   .footer__media-cta {
     padding-right: 10px;
@@ -71,29 +102,35 @@
   .footer__subscribe {
     display: flex;
     margin-top: 46px;
+    @include breakpoint(sm) {
+    margin-top: 31px;
+      flex-wrap: wrap;
+    
   }
-  
+}
   
   .footer__input{
-  
-  }
-  .footer__send-form{
-  
-  }
-  
-  
-  
-  .footer__input{
+    padding: 10px;
     font-size: 18px;
     text-align: center;
+    flex-grow: 1;
     width: 100%;
+    cursor: pointer;
+    @include breakpoint(sm) {
+   margin-bottom: 24px;
+   font-size: 14px;
+    }
   }
   .footer__send-form{
     flex-grow: 1;
     text-transform: uppercase;
     padding:10px 16px;
+    cursor: pointer;
+    @include breakpoint(sm) {
+      margin-bottom: 24px;
+      font-size: 14px;
   }
-  
+}
   .footer__col-title {
     font-weight: 700;
     font-size: 24px;
@@ -114,6 +151,10 @@
     text-transform: uppercase;
     text-decoration: underline;
     color: var(--black);
+    @include breakpoint(sm) {
+      display: flex;
+     justify-content: center;
+    }
   }
   
   .footer__copyright {
@@ -121,6 +162,6 @@
     text-align: center;
     font-weight: 700;
     font-size: 13px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #C6CBCD;
   }
   

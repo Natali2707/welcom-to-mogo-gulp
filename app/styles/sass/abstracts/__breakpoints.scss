@@ -1,0 +1,21 @@
+// breakpoints
+$breakpoints: ( 
+  sm: 560px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// media queries mixins
+@mixin breakpoint($screen-size) {
+  @if map-has-key($breakpoints, $screen-size) {
+    @media (max-width: map-get($breakpoints, $screen-size)) {
+      @content;
+    }
+  }
+
+  @else {
+    // Debugging
+    @error "`#{$screen-size}` has not been declared as a breakpoint."
+  }
+}

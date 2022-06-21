@@ -1,19 +1,95 @@
 .work {
-  margin-bottom: 84px;
-}
-.work-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 84px;
+  &-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "item-1 item_big"
+        "item-5 item_big"
+        "item-7 item_big"
+        "item-4 item-2"
+        "item_active item_active";
+    }
+    &__item {
+      height: 100%;
+      object-fit: cover;
+      &-1 {
+        @include breakpoint(md) {
+          grid-area: item-1;
+        }
+      }
+
+      &-2 {
+        @include breakpoint(md) {
+          grid-area: item-2;
+        }
+      }
+      &_big {
+        @include breakpoint(md) {
+          grid-area: item_big;
+        }
+      }
+      &-4 {
+        @include breakpoint(md) {
+          grid-area: item-4;
+        }
+      }
+      &-5 {
+        @include breakpoint(md) {
+          grid-area: item-5;
+        }
+      }
+      &_active {
+        @include breakpoint(md) {
+          grid-area: item_active;
+        }
+      }
+      &-7 {
+        @include breakpoint(md) {
+          grid-area: item-7;
+        }
+      }
+      &_active {
+        position: relative;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      &:hover {
+        display: none;
+      }
+      &_active {
+        @include breakpoint(md) {
+          display: block;
+        }
+      }
+      & > .work-row__item_active {
+        @include breakpoint(md) {
+          position: absolute;
+          display: none;
+          &_active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 
-.work-row__item {
-  height: 100%;
-  object-fit:cover;
-}
-.work-row .work-row__item_big{
-  grid-row-start:1 ;
-  grid-row-end: 3; 
-   grid-column-start: 3;
-  grid-column-end:3;
+.work-row .work-row__item_big {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  @include breakpoint(md) {
+    grid-row-start: 1;
+    grid-row-end: 4 ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
