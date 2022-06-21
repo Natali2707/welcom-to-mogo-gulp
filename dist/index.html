@@ -15,10 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <script src="./js/app.min.js" defer></script>
+    <script src="../js/app.min.js" defer></script>
     <title>Document</title>
   </head>
   <body>
+    
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -86,6 +87,21 @@
               </li>
             </ul>
           </nav>
+         
+          <button class="burger header__burger"><svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 19H38V22H14V19ZM14 26.5H38V29.5H14V26.5ZM14 34H38V37H14V34Z" fill="white"/>
+            </svg>  
+            <button class="burger header__burger-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" version="1.1" viewBox="0 0 32 32">
+               <g transform="scale(2)">
+                <rect style="fill:#ffffff" width="2" height="10" x="-.98" y="-16.29" transform="rotate(135)"/>
+                <rect style="fill:#ffffff" width="2" height="10" x="-12.29" y="-5.01" transform="rotate(-135)"/>
+               </g>
+              </svg>
+          </button>
+          </button>
+        
+          
         </div>
       </div>
     </header>
@@ -102,7 +118,7 @@
   to MoGo
 </h1>
 <a class="promo__link" href="/learn-more/">learn-more</a>
-</section> -->
+</section> 
 
 
 
@@ -117,12 +133,13 @@ story about us</h2>
 <p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
 
 <div class="row about-us__row">
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/fone.jpg" alt="Super Team"></div>
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/fone2.jpg" alt="Super Team"></div>
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/men.svg" alt="Super Team"></div>
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/super.svg" alt="Super Team"></div>
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/build.png" alt="build"></div>
-<div class="about-us__card col-4"><img class="about-us__pic" src="./images/dist/about/build-2.png" alt="build-"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/fone.jpg" alt="Super Team"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic_active" src="./images/dist/about/fone2.jpg" alt="Super Team"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/men.svg" alt="Super Team"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/super.svg" alt="Super Team"></div>
+<div class="about-us__card about-us__card_mobile col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/mobile.jpg" alt="Super Team"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build.png" alt="build"></div>
+<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build-2.png" alt="build-"></div>
 </div>
 </section> 
 
@@ -219,12 +236,106 @@ amazing services</h2>
 
 
 
+<!-- design start -->
+
+<section class="design">
+  <div class="container">
+    <div class="section-head design__head">
+      <p class="section-head__subtitle">For all  devices</p>
+      <h2 class="section-head__title">
+        unique design</h2>
+      </div>
+     
+      <div class="design__img-wrap">
+        <img class="design__pc-img" src="./images/dist/design/mac.png" alt="mac">
+        <img class="design__phone-img" src="./images/dist/design/iphone.png" alt="iphone">
+      </div>
+      
+  </div>
+</section>
+
+<!-- design end -->
+
+
+<!-- service start -->
+<section class="service">
+  <div class="container">
+    <div class="section-head service__head">
+      <p class="section-head__subtitle">Service</p>
+        <h2 class="section-head__title">
+          what we do</h2>
+            </div>
+      <p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+        
+      </p>
+
+<div class="row service-row">
+  <div class="service-card col-6 col-xl-6 col-sm-12">
+    <img class="service-card__photo" src="./images/dist/service/man.jpg" alt="photographer">
+  </div>
+
+
+  <div class="service-card col-6 col-xl-6 col-sm-12">
+    <div class="service-wrapper">
+    <div class="service-wrapper__item service-wrapper__item-active">
+      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-1">
+    <label class="service-wrapper__trigger service-wrapper__trigger_one" for="accordion-1">
+      photography
+    </label>
+    <div class="service-wrapper__content"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+    </div>
+    </div>
+
+
+    <div class="service-wrapper__item">
+      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-2" >
+ <label class="service-wrapper__trigger service-wrapper__trigger_two" for="accordion-2">
+  creativity
+    </label>
+
+
+
+
+
+    <div class="service-wrapper__content"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+    </div>
+    </div>
+
+
+    <div class="service-wrapper__item">
+      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-3">
+    <label class="service-wrapper__trigger service-wrapper__trigger_three" for="accordion-3">
+      web design
+    </label>
+    <div class="service-wrapper__content"> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+    </div>
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- service end -->
+
+
+
+
+
 <!-- Slider -->
 
 
 <section class="reviews">
   <div class="container">
-    <div class="splide review-slider" aria-labelledby="carousel-heading">
+    <div class="splide review-slider" id="review-slider" aria-labelledby="carousel-heading">
     
     
       <div class="splide__track">
@@ -273,26 +384,25 @@ amazing services</h2>
       </p>
       <div class="content">
         <div class="work-row">
-          <div class="work-row__item"><img src="./images/dist/our work/work1.jpg" alt="" ></div>
-          <div class="work-row__item"><img src="./images/dist/our work/work2.jpg" alt=""></div>
+          <div class="work-row__item work-row__item-1"><img src="./images/dist/our work/work1.jpg" alt="" ></div>
+          <div class="work-row__item work-row__item-2"><img src="./images/dist/our work/work2.jpg" alt=""></div>
           <div class="work-row__item work-row__item_big"><img src="./images/dist//our work/work3.jpg" alt=""></div>
-          <div class="work-row__item"><img src="./images/dist/our work/work4.jpg" alt=""></div>
-          <div class="work-row__item work-row__item_num5"><img src="./images/dist/our work/work5.jpg" alt=""></div>
-          <div class="work-row__item work-row__item_num6"><img src="./images/dist/our work/work6.jpg" alt=""></div>
-          <div class="work-row__item work-row__item_num7"><img src="./images/dist/our work/work7.jpg" alt=""></div>
-  
+          <div class="work-row__item work-row__item-4"><img src="./images/dist/our work/work4.jpg" alt=""></div>
+          <div class="work-row__item work-row__item-5"><img src="./images/dist/our work/work5.jpg" alt=""></div>
+          <div class="work-row__item work-row__item_active"><img class="work-row__img" src="./images/dist/our work/work6.1.jpg" alt=""><img class="work-row__img_active" src="./images/dist/our work/work6.2.jpg" alt=""></div>
+          <div class="work-row__item work-row__item-7 "><img src="./images/dist/our work/work7.jpg" alt="">
+          </div>
         </div>
       </div>
-  </div>
-  
+    </div>
   </section>
   
 
   <!-- slider-man -->
-  <section class="reviews reviews_light">
+
+  <section class="author-reviews">
     <div class="container">
-      <div class="splide review-slider review-slider_bg" aria-labelledby="carousel-heading">
-      
+      <div class="splide review-slider" id="author-review" aria-labelledby="carousel-heading">
       
         <div class="splide__track">
           <ul class="splide__list">
@@ -317,7 +427,6 @@ amazing services</h2>
     <p class="review-slide__author">Nen Bulk</p>
   </div>
             </li>
-            
           </ul>
         </div>
       </div>
@@ -481,7 +590,7 @@ jan</div>
 <footer class="footer">
 	<div class="container">
 	  <div class="footer__row row">
-		<div class="footer__col col-4 col-md-6 col-xs-12">
+		<div class="footer__col col-4 col-md-4 col-xs-12">
 		 <a href="" class="footer__logo-link">
 		  <img class="footer__logo" src="./images/dist/footer/logo.svg" alt="logo">
 		 </a>
@@ -535,21 +644,25 @@ jan</div>
 		</form>
 		</div>
   
-		  <div class="footer__col col-5 col-md-6 col-xs-12">
+		  <div class="footer__col col-5 col-md-5 col-xs-12">
 			<p class="footer__col-title">blogs</p>
 			<div class="footer__news">
 			  <div class="news-card footer__news-card">
 				<a class=
 			  "news-card__imag-link" href=""><img src="./images/dist/footer/news1.jpg" alt="news" class="news-card__img"></a>
 			  <div class="news-card__content">
-				<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<a class="news-card__link" href="#!">
+					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</a>
 			  <span class="news-card__date">jan.9.22.15</span>
 			  </div>
 			  </div>
 			  <div class="news-card footer__news-card">
   <a class="news-card__imag-link" href=""><img src="./images/dist/footer/news2.jpg" alt="news" class="news-card__img"></a>
 			  <div class="news-card__content">
-				<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<a class="news-card__link" href="#!">
+					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</a>
 			  <span class="news-card__date">jan.9.22.15</span>
 			  </div>
 			  </div>
@@ -557,14 +670,16 @@ jan</div>
 	   <a class=
 	  "news-card__imag-link" href="">         <img src="./images/dist/footer/news3.jpg" alt="news" class="news-card__img"></a>
 			  <div class="news-card__content">
-				<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<a class="news-card__link" href="#!">
+					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</a>
 			  <span class="news-card__date">jan.9.22.15</span>
 			  </div>
 			  </div>
   
 			</div>
 		  </div>
-		  <div class="footer__col col-3 col-md-5 col-xs-12">
+		  <div class="footer__col col-3 col-md-3 col-xs-12">
 			<p class="footer__col-title">instagram</p>
 			<div class="images-gallery">
 			  <div class="images-gallery__item">
