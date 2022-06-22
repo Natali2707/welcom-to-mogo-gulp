@@ -2,7 +2,8 @@
 .promo {
     display: flex;
     padding-top: 177px;
-    height: 100vh;
+    padding-bottom: 85px;
+    // height: 100vh;
     text-align: center;
     background-image: linear-gradient(
         360deg,
@@ -29,7 +30,6 @@
   }
   
   &__subtitle {
-    margin-top: 77px;
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
     font-size: 4.5vw;
@@ -39,12 +39,8 @@
     font-family: "montserrat";
     font-weight: 700;
     font-size:9.5vw ;
-    line-height: 2.1;
     text-transform: uppercase;
-    margin-bottom: 116px;
-    @include breakpoint(xl) {
-      line-height: 1.2;
-    }
+    margin-bottom: 24px;
     @include breakpoint(sm) {
       font-size:15vw ;
       margin-bottom: 50px;
@@ -69,6 +65,7 @@
     font-family: "Raleway";
     font-weight: 700;
     padding: 25px 60px;
+    margin-bottom: 77px;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;

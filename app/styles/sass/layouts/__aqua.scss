@@ -1,48 +1,63 @@
-/* aqua Start */
+ /* aqua Start */
 .aqua {
     padding: 0 15px;
     background-color: var(--blue);
-  }
-  .aqua__cards {
+ &__cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 0 170px;
-  }
   @include breakpoint(xl) {
-    .aqua__cards {
       margin: 0;
     }
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
-  .aqua__card {
+
+  &__card {
     padding: 40px 10px;
     text-align: center;
     border-left: 1px solid #FFFFFF;
     border-right: 1px solid #FFFFFF;
     color: #FFFFFF;
+    @include breakpoint(md) {
+      border-bottom: 1px solid #FFFFFF;
+      border-left: none;
+      border-right: none;
+    }
+    &:last-child{
+      @include breakpoint(md) {
+      
+      grid-column-start:1 ;
+      grid-column-end:3 ;
+      grid-row-start:3 ;
+      grid-row-row: 4;
+    }
   }
-  .aqua__number {
+  }
+
+  &__number {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.2;
     margin-bottom: 10px;
-  }
+  
   @include breakpoint(xl) {
-    .aqua__number {
       font-size: 48px;
       margin-bottom: 15px;
     }
   }
   
-  .aqua__text {
+  &__text {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-  }
   @include breakpoint(xl) {
-    .aqua__text {
       font-weight: 500;
       font-size: 28px;
     }
   }
+}
   /* aqua End */
   

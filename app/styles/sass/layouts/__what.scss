@@ -4,6 +4,9 @@
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  @include breakpoint(xl) {
+    padding-top: 28px;
+  }
   &__head {
     margin-bottom: 42px;
     @include breakpoint(xl) {
@@ -13,9 +16,15 @@
 
   &__card {
     display: flex;
+    @include breakpoint(md) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   &__img-wrap {
+    display: flex;
     position: relative;
     flex-shrink: 0;
     width: 130px;
@@ -24,6 +33,10 @@
     @include breakpoint(xl) {
       width: 88px;
       height: 88px;
+      margin-right: 48px;
+    }
+    @include breakpoint(md) {
+      margin: 0 auto 20px;
     }
   }
 
@@ -31,6 +44,8 @@
     position: absolute;
     clip-path: circle(50%);
     object-fit: cover;
+    @include breakpoint(md) {
+    }
   }
 
   &__card-title {
@@ -41,6 +56,7 @@
     text-transform: uppercase;
     @include breakpoint(xl) {
       font-size: 18px;
+      line-height: 21px;
     }
   }
 
@@ -48,6 +64,9 @@
     text-transform: uppercase;
     @include breakpoint(xl) {
       font-size: 14px;
+    }
+    @include breakpoint(md) {
+      margin-bottom: 21px;
     }
     &::after {
       content: "";
@@ -59,6 +78,11 @@
       @include breakpoint(xl) {
         width: 47px;
         margin: 22px 0;
+      }
+      @include breakpoint(md) {
+        width: 144px;
+        align-items: center;
+        margin: 21px auto;
       }
     }
   }

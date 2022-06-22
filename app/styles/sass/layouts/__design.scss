@@ -7,29 +7,39 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 @include breakpoint(xl) {
-margin-bottom: 125px;
+    padding-top: 28px;
+    padding-bottom: 38px;
+    margin-bottom: 86px;
 @include breakpoint(md) {
-margin-bottom: 77px;
+    padding-top: 43px;
+    padding-bottom: 25px;
+    margin-bottom: 52px;
 }
 }
     &__head {
-    
     margin-bottom: 59px;
+    @include breakpoint(xl) {
+        margin-bottom: 40px;
+    } 
+    @include breakpoint(md) {
+        margin-bottom: 37 px;
+    } 
     }
     &__img-wrap {
         position: relative;
-        display: flex;
+        display: flex; 
         max-width: 1170px;
         justify-content: center;
     }
 
     &__pc-img {
-  width: calc(100% - var(--gutter) * 5);
+  width: calc(100% - var(--gutter) * 6);
     }
 
     &__phone-img {
         position: absolute;
-        width: 20%;
+        width: 25%;
+        height: 75%;
         bottom: -15%;
         right: -5%;
         margin-right: 40px;

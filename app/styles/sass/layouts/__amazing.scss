@@ -21,10 +21,6 @@
       margin-bottom: 30px;
       margin-top: 30px;
     }
-       @include breakpoint(sm) {
-      margin-bottom: 16px;
-      margin-top: 16px;
-    }
   }
 
   &__card-img {
@@ -33,8 +29,10 @@
     width: 70px;
     flex-shrink: 0;
     @include breakpoint(xl) {
-      width: 60px;
-      padding-right: 25px;
+      padding-right: 28px;
+    }
+    @include breakpoint(md) {
+      padding-right: 28px;
     }
   }
 
@@ -58,80 +56,3 @@
     }
   }
 }
-// .amazing {
-//     padding-top: 50px;
-//     padding-bottom: 20px;
-//   }
-
-//   @include breakpoint(xl) {
-//     .amazing {
-//       padding-top: 28px;
-//       padding-bottom: 28px;
-//     }
-//   }
-//   .amazing__head {
-//     margin-bottom: 10px;
-//   }
-
-//   @include breakpoint(xl) {
-//     .amazing__head {
-//       margin-bottom: 40px;
-//     }
-//   }
-//   .amazing__card {
-//     margin-bottom: 70px;
-//     margin-top: 70px;
-//     display: flex;
-//   }
-
-//   @include breakpoint(xl) {
-//     .amazing__card {
-//       margin-bottom: 30px;
-//       margin-top: 30px;
-//     }
-//   }
-//      @include breakpoint(sm) {
-//     .amazing__card {
-//       margin-bottom: 16px;
-//       margin-top: 16px;
-//     }
-//   }
-//   .amazing__card-img {
-//     padding-right: 38px;
-//     align-self: flex-start;
-//     width: 70px;
-//     flex-shrink: 0;
-//   }
-
-//   @include breakpoint(xl) {
-//     .amazing__card-img {
-//       width: 60px;
-//       padding-right: 25px;
-//     }
-//   }
-//   .amazing__card-info {
-//   }
-//   .amazing__card-name {
-//     padding: 10px 0;
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 28px;
-//     text-transform: uppercase;
-//   }
-//   @include breakpoint(xl) {
-//     .amazing__card-name {
-//       font-size: 18px;
-//     }
-//   }
-
-//   .amazing__card-desc {
-//     padding: 5px 0;
-//     font-size: 18px;
-//     line-height: 21px;
-//   }
-
-//   @include breakpoint(xl) {
-//     .amazing__card-desc {
-//       font-size: 14px;
-//     }
-//   }

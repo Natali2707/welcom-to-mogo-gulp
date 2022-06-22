@@ -6,6 +6,7 @@
     grid-template-rows: repeat(2, 1fr);
 
     @include breakpoint(md) {
+      display: inline-grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "item-1 item_big"
@@ -15,8 +16,10 @@
         "item_active item_active";
     }
     &__item {
-      height: 100%;
+      height: auto;
+      width: 100%;
       object-fit: cover;
+      justify-items: stretch;
       &-1 {
         @include breakpoint(md) {
           grid-area: item-1;
@@ -29,10 +32,20 @@
         }
       }
       &_big {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 3;
         @include breakpoint(md) {
+          grid-row-start: 1;
+          grid-row-end: 4;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          min-height: 100%;
           grid-area: item_big;
         }
       }
+
       &-4 {
         @include breakpoint(md) {
           grid-area: item-4;
@@ -58,38 +71,30 @@
       }
     }
 
-    &__img {
+    &__img_active0 {
       position: absolute;
+      width: 100%;
+      @include breakpoint(md) {
+        display: none;
+      }
       &:hover {
         display: none;
       }
       &_active {
         @include breakpoint(md) {
           display: block;
-        }
-      }
-      & > .work-row__item_active {
-        @include breakpoint(md) {
-          position: absolute;
-          display: none;
-          &_active {
-            display: block;
-          }
+          width: 100%;
         }
       }
     }
-  }
-}
-
-.work-row .work-row__item_big {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  @include breakpoint(md) {
-    grid-row-start: 1;
-    grid-row-end: 4 ;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    &__img_big {
+      height: 100%;
+    }
+    &__img_active {
+      @include breakpoint(md) {
+        width: 100%;
+        height: calc(100% / 2);
+      }
+    }
   }
 }
