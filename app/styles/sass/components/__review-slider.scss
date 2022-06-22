@@ -1,7 +1,7 @@
 .review-slider {
   position: relative;
   padding: 0 87px;
- 
+
   @include breakpoint(md) {
     padding: 0 50px;
   }
@@ -9,63 +9,62 @@
   @include breakpoint(sm) {
     padding: 0;
   }
-&__arrow {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  width: 42px;
-  height: 100%;
-  background: none;
-  border: none;
-  align-items: center;
-  z-index: 1;
-  background: url(../images/dist/reviews/slider.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  &:hover {
-    opacity: 0.5;
+  &__arrow {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 42px;
+    height: 100%;
+    background: none;
+    border: none;
+    align-items: center;
+    z-index: 1;
+    background: url(../images/dist/reviews/slider.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:first-child {
+      left: 0;
+      transform: rotate(180deg);
+    }
+    &:last-child {
+      right: 0;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+  &__pagination {
+    margin-top: 25px;
+  }
+  &__pagination > li {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__pagination > li button {
+    display: block;
+    background: none;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #c6cbcd;
+    border-radius: 50%;
+    padding: 0;
+
+    .is-active {
+      background: var(--grey);
+    }
   }
 
-
-&:first-child {
-  left: 0;
-  transform: rotate(180deg);
-}
-&:last-child {
-  right: 0;
-}
-
-svg {
-  display: none;
-}
-}
-&__pagination {
-  margin-top: 25px;
-}
-&__pagination > li {
-  margin-right: 20px;
-  &:last-child{
-    margin-right: 0;
+  &__slide {
+    max-width: 1000px;
+    margin: 0 auto;
   }
-}
-&__pagination > li button {
-  display: block;
-  background: none;
-  background: #fff;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #C6CBCD ;
-  border-radius: 50%;
-  padding: 0;
-
-  .is-active{
-background: var(--grey);
-  }
-}
-
-&__slide {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 }
