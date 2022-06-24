@@ -1,436 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    />
-    <link rel="stylesheet" href="./css/app.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-<link rel="icon" type="image/png" sizes="16x16" href="./images/dist/sun/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-    <script src="./js/app.min.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="" class="header__logo-link">
-            <img
-              class="header__logo-img"
-              src="./images/dist/MoGo.svg"
-              alt="MoGo"
-          /></a>
-          <nav class="header__nav">
-            <ul class="header__menu">
-              <li
-                class="header__menu-item header__menu-item_has-child header__menu-item_active"
-              >
-                <a
-                  class="header__menu-link"
-                  href="/test/about.html/"
-                  target="_blank"
-                  >About</a
-                >
-                <ul class="header__submenu">
-                  <li class="header__submenu-item">
-                    <a href="" class="header__submenu-link">Company</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="" class="header__submenu-link">Vacancy</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="" class="header__submenu-link">Contacts</a>
-                  </li>
-                  <li class="header__submenu-item">
-                    <a href="" class="header__submenu-link">Teem</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header__menu-item">
-                <a
-                  class="header__menu-link"
-                  href="/test/about.html/"
-                  target="_blank"
-                  >SERVICE</a
-                >
-              </li>
-              <li class="header__menu-item">
-                <a
-                  class="header__menu-link"
-                  href="/test/about.html/"
-                  target="_blank"
-                  >Work</a
-                >
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="/about.html/" target="_blank"
-                  >Blog</a
-                >
-              </li>
-              <li class="header__menu-item">
-                <a
-                  class="header__menu-link"
-                  href="/test/contact.html/"
-                  target="_blank"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-         
-          <button class="burger header__burger"><svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 19H38V22H14V19ZM14 26.5H38V29.5H14V26.5ZM14 34H38V37H14V34Z" fill="white"/>
-            </svg>  
-            <button class="burger header__burger-close">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" version="1.1" viewBox="0 0 32 32">
-               <g transform="scale(2)">
-                <rect style="fill:#ffffff" width="2" height="10" x="-.98" y="-16.29" transform="rotate(135)"/>
-                <rect style="fill:#ffffff" width="2" height="10" x="-12.29" y="-5.01" transform="rotate(-135)"/>
-               </g>
-              </svg>
-          </button>
-          </button>
-        
-          
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="./css/app.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/dist/sun/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="./js/app.min.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="" class="header__logo-link">
+          <img class="header__logo-img" src="./images/dist/MoGo.svg" alt="MoGo" /></a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item header__menu-item_has-child header__menu-item_active">
+              <a class="header__menu-link" href="/test/about.html/" target="_blank">About</a>
+              <ul class="header__submenu">
+                <li class="header__submenu-item">
+                  <a href="" class="header__submenu-link">Company</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="" class="header__submenu-link">Vacancy</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="" class="header__submenu-link">Contacts</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a href="" class="header__submenu-link">Teem</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/test/about.html/" target="_blank">SERVICE</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/test/about.html/" target="_blank">Work</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/about.html/" target="_blank">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/test/contact.html/" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger header__burger header__burger-close"><svg width="55" height="56" viewBox="0 0 55 56" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 19H38V22H14V19ZM14 26.5H38V29.5H14V26.5ZM14 34H38V37H14V34Z" fill="white" />
+          </svg>
+        </button>
+          <!-- <button class="burger header__burger-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" version="1.1" viewBox="0 0 32 32">
+              <g transform="scale(2)">
+                <rect style="fill:#ffffff" width="2" height="10" x="-.98" y="-16.29" transform="rotate(135)" />
+                <rect style="fill:#ffffff" width="2" height="10" x="-12.29" y="-5.01" transform="rotate(-135)" />
+              </g>
+            </svg>
+          </button> -->
+
+
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
+<main class="main">
+  <!-- Promo -->
+  <section class="promo">
+    <div class="container">
+
+      <div class="splide promo__slider" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide promo__slide" data-slide-title="01 intro">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title">
+                Welcome <br />
+                to MoGo
+              </h1>
+              <a class="promo__link" href="/learn-more/">learn-more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="02 worck">
+              <p class="promo__subtitle">Creative </p>
+              <h1 class="promo__title">
+                Welcome <br />
+                Denis
+              </h1>
+              <a class="promo__link" href="/learn-more/">learn-more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="03about">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title">
+                Welcome <br />
+                Anna
+              </h1>
+              <a class="promo__link" href="/learn-more/">learn-more</a>
+            </li>
+            <li class="splide__slide promo__slide" data-slide-title="04 contacts">
+              <p class="promo__subtitle">Creative Template</p>
+              <h1 class="promo__title">
+                Welcome <br />
+                Mark
+              </h1>
+              <a class="promo__link" href="/learn-more/">learn-more</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About us -->
+  <section class="about-us">
+    <div class="container">
+      <div class="section-head about-us__head">
+        <p class="section-head__subtitle">What we do</p>
+        <h2 class="section-head__title">
+          story about us</h2>
+      </div>
+      <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+        lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
+        sit fermentum risus feugiat.</p>
+
+      <div class="row about-us__row">
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/fone.jpg"
+            alt="Super Team"></div>
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic_active"
+            src="./images/dist/about/fone2.jpg" alt="Super Team"></div>
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/men.svg"
+            alt="Super Team"></div>
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/super.svg"
+            alt="Super Team"></div>
+        <div class="about-us__card about-us__card_mobile col-4 col-sm-12"><img class="about-us__pic"
+            src="./images/dist/about/mobile.jpg" alt="Super Team"></div>
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build.png"
+            alt="build"></div>
+        <div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build-2.png"
+            alt="build-"></div>
+      </div>
+  </section>
+
+
+  <!-- aqua Start -->
+  <section class="aqua">
+    <div class="aqua__cards">
+      <div class="aqua__card">
+        <p class="aqua__number">42</p>
+        <p class="aqua__text">Lorem ipsum</p>
+      </div>
+      <div class="aqua__card">
+        <p class="aqua__number">123</p>
+        <p class="aqua__text">Lorem ipsum</p>
+      </div>
+      <div class="aqua__card">
+        <p class="aqua__number">15</p>
+        <p class="aqua__text">Lorem ipsum</p>
+      </div>
+      <div class="aqua__card">
+        <p class="aqua__number">99</p>
+        <p class="aqua__text">Lorem ipsum</p>
+      </div>
+      <div class="aqua__card">
+        <p class="aqua__number">24</p>
+        <p class="aqua__text">Lorem ipsum</p>
+      </div>
+    </div>
+  </section>
+  <!-- aqua End -->
+
+
+
+
+
+
+
+
+
+  <!-- Amazing  start-->
+  <section class="amazing">
+    <div class="container">
+      <div class="section-head amazing__head">
+        <p class="section-head__subtitle">We worck with</p>
+        <h2 class="section-head__title">
+          amazing services</h2>
+      </div>
+      <div class="row">
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/photo.svg" alt="Photo">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">photography</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/web.svg" alt="Web">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">web design</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/creativ.svg" alt="Creative">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">creativity</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/seo.svg" alt="Seo">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">seo</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/css.svg" alt="css">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">css/htmly</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="amazing__card col-4 col-md-6 col-xs-12">
+          <img class="amazing__card-img" src="./images/dist/amazing/digital.svg" alt="digital">
+          <div class="amazing__card-info">
+            <p class="amazing__card-name">digital</p>
+            <p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
       </div>
-    </header>
-  </body>
-</html>
-
-<main class="main">
-    <!-- Promo -->
-    <section class="promo">
-      <div class="container">
-<p class="promo__subtitle">Creative Template</p>
-  <h1 class="promo__title">
-  Welcome <br />
-  to MoGo
-</h1>
-<a class="promo__link" href="/learn-more/">learn-more</a>
-</section> 
-
-
-
-<!-- About us -->
-<section class="about-us">
-<div class="container">
-<div class="section-head about-us__head">
-<p class="section-head__subtitle">What we do</p>
-<h2 class="section-head__title">
-story about us</h2>
-</div>
-<p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
-
-<div class="row about-us__row">
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/fone.jpg" alt="Super Team"></div>
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic_active" src="./images/dist/about/fone2.jpg" alt="Super Team"></div>
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/men.svg" alt="Super Team"></div>
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/super.svg" alt="Super Team"></div>
-<div class="about-us__card about-us__card_mobile col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/mobile.jpg" alt="Super Team"></div>
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build.png" alt="build"></div>
-<div class="about-us__card col-4 col-sm-12"><img class="about-us__pic" src="./images/dist/about/build-2.png" alt="build-"></div>
-</div>
-</section> 
-
-
-<!-- aqua Start -->
-<section class="aqua">
-  <div class="aqua__cards">
-    <div class="aqua__card">
-      <p class="aqua__number">42</p>
-      <p class="aqua__text">Lorem ipsum</p>
     </div>
-    <div class="aqua__card">
-      <p class="aqua__number">123</p>
-      <p class="aqua__text">Lorem ipsum</p>
-    </div>
-    <div class="aqua__card">
-      <p class="aqua__number">15</p>
-      <p class="aqua__text">Lorem ipsum</p>
-    </div>
-    <div class="aqua__card">
-      <p class="aqua__number">99</p>
-      <p class="aqua__text">Lorem ipsum</p>
-    </div>
-    <div class="aqua__card">
-      <p class="aqua__number">24</p>
-      <p class="aqua__text">Lorem ipsum</p>
-    </div>
-  </div>
-</section>
-<!-- aqua End -->
+  </section>
 
 
 
+  <!-- design start -->
 
-
-
-
-
-
-<!-- Amazing  start-->
-<section class="amazing">
-<div class="container">
-<div class="section-head amazing__head">
-<p class="section-head__subtitle">We worck with</p>
-<h2 class="section-head__title">
-amazing services</h2>
-</div>
-<div class="row">
-<div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/photo.svg" alt="Photo">
- <div class="amazing__card-info">
-<p class="amazing__card-name">photography</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-<div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/web.svg" alt="Web">
- <div class="amazing__card-info">
-<p class="amazing__card-name">web design</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-<div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/creativ.svg" alt="Creative">
- <div class="amazing__card-info">
-<p class="amazing__card-name">creativity</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-<div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/seo.svg" alt="Seo">
- <div class="amazing__card-info">
-<p class="amazing__card-name">seo</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-<div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/css.svg" alt="css">
- <div class="amazing__card-info">
-<p class="amazing__card-name">css/htmly</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-          <div class="amazing__card col-4 col-md-6 col-xs-12">
- <img class="amazing__card-img" src="./images/dist/amazing/digital.svg" alt="digital">
-    <div class="amazing__card-info">
-<p class="amazing__card-name">digital</p>
-<p class="amazing__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-<!-- design start -->
-
-<section class="design">
-  <div class="container">
-    <div class="section-head design__head">
-      <p class="section-head__subtitle">For all  devices</p>
-      <h2 class="section-head__title">
-        unique design</h2>
+  <section class="design">
+    <div class="container">
+      <div class="section-head design__head">
+        <p class="section-head__subtitle">For all devices</p>
+        <h2 class="section-head__title">
+          unique design</h2>
       </div>
-     
+
       <div class="design__img-wrap">
         <img class="design__pc-img" src="./images/dist/design/mac.png" alt="mac">
         <img class="design__phone-img" src="./images/dist/design/iphone.png" alt="iphone">
       </div>
-      
-  </div>
-</section>
 
-<!-- design end -->
+    </div>
+  </section>
+
+  <!-- design end -->
 
 
-<!-- service start -->
-<section class="service">
-  <div class="container">
-    <div class="section-head service__head">
-      <p class="section-head__subtitle">Service</p>
+  <!-- service start -->
+  <section class="service">
+    <div class="container">
+      <div class="section-head service__head">
+        <p class="section-head__subtitle">Service</p>
         <h2 class="section-head__title">
           what we do</h2>
-            </div>
-      <p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
-        
+      </div>
+      <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+        lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
+        sit fermentum risus feugiat.
+
       </p>
 
-<div class="row service-row">
-  <div class="service-card col-6 col-xl-6 col-sm-12">
-    <img class="service-card__photo" src="./images/dist/service/man.jpg" alt="photographer">
-  </div>
+      <div class="row service-row">
+        <div class="service-card col-6 col-xl-6 col-sm-12">
+          <img class="service-card__photo" src="./images/dist/service/man.jpg" alt="photographer">
+        </div>
 
 
-  <div class="service-card col-6 col-xl-6 col-sm-12">
-    <div class="service-wrapper">
-    <div class="service-wrapper__item service-wrapper__item-active">
-      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-1">
-    <label class="service-wrapper__trigger service-wrapper__trigger_one" for="accordion-1">
-      photography
-    </label>
-    <div class="service-wrapper__content"> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+        <div class="service-card col-6 col-xl-6 col-sm-12">
+          <div class="service-wrapper">
+            <div class="service-wrapper__item service-wrapper__item-active">
+              <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-1">
+              <label class="service-wrapper__trigger service-wrapper__trigger_one" for="accordion-1">
+                photography
+              </label>
+              <div class="service-wrapper__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean.
+              </div>
+            </div>
+
+
+            <div class="service-wrapper__item">
+              <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-2">
+              <label class="service-wrapper__trigger service-wrapper__trigger_two" for="accordion-2">
+                creativity
+              </label>
+
+
+
+
+
+              <div class="service-wrapper__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean.
+              </div>
+            </div>
+
+
+            <div class="service-wrapper__item">
+              <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-3">
+              <label class="service-wrapper__trigger service-wrapper__trigger_three" for="accordion-3">
+                web design
+              </label>
+              <div class="service-wrapper__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean.
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
     </div>
-    </div>
+  </section>
 
 
-    <div class="service-wrapper__item">
-      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-2" >
- <label class="service-wrapper__trigger service-wrapper__trigger_two" for="accordion-2">
-  creativity
-    </label>
+
+  <!-- service end -->
 
 
 
 
 
-    <div class="service-wrapper__content"> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-    </div>
-    </div>
+  <!-- Slider -->
 
 
-    <div class="service-wrapper__item">
-      <input class="service-wrapper__input" type="radio" name="accordion" id="accordion-3">
-    <label class="service-wrapper__trigger service-wrapper__trigger_three" for="accordion-3">
-      web design
-    </label>
-    <div class="service-wrapper__content"> 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
-    </div>
-    </div>
+  <section class="reviews">
+    <div class="container">
+      <div class="splide review-slider" id="review-slider" aria-labelledby="carousel-heading">
 
 
-  </div>
-</div>
-</div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide review-slide">
+              <img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
+                  platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet
+                  venenatis, massa sit.</p>
+                <p class="review-slide__author">Jon Doe</p>
+              </div>
+            </li>
+            <li class="splide__slide review-slide">
+              <img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <p class="review-slide__author">Deniz</p>
+              </div>
+            </li>
+            <li class="splide__slide review-slide">
+              <img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum dolor sit amet, diam platea ullamcorper feugiat amet. Id
+                  aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                <p class="review-slide__author">Nen Bulk</p>
+              </div>
+            </li>
 
-</div>
-</section>
-
-
-
-<!-- service end -->
-
-
-
-
-
-<!-- Slider -->
-
-
-<section class="reviews">
-  <div class="container">
-    <div class="splide review-slider" id="review-slider" aria-labelledby="carousel-heading">
-    
-    
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide review-slide">
-<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
-<div class="review-slide__content">
-  <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-  <p class="review-slide__author">Jon Doe</p>
-</div>
-          </li>
-          <li class="splide__slide review-slide">
-<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
-<div class="review-slide__content">
-  <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-  <p class="review-slide__author">Deniz</p>
-</div>
-          </li>
-          <li class="splide__slide review-slide">
-<img class="review-slide__icon" src="./images/dist/reviews/icon1.svg" alt="slider">
-<div class="review-slide__content">
-  <p class="review-slide__text">Lorem ipsum dolor sit amet,  diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-  <p class="review-slide__author">Nen Bulk</p>
-</div>
-          </li>
-          
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+
+  <!-- meet-our -->
+  <section class="meet-our">
+    <div class="container">
+      <div class="section-head meet-our__head">
+        <p class="section-head__subtitle">Who we are</p>
+        <h2 class="section-head__title">
+          meet our team</h2>
+      </div>
+      <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+        lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
+        sit fermentum risus feugiat.</p>
+
+      <div class="row meet-our__row">
+
+        <div class="meet-our__card meet-our__card_active col-4 col-md-12">
+          <div class="meet-our__pic_active">
+            <img class="meet-our__pic_active1" src="./images/dist/meet/Kadin.png" alt="Super Team"><img
+              class="meet-our__pic_active2" src="./images/dist/meet/bg .png" alt="SEO">
+          </div>
+          <div class="meet-our__card-info">
+            <p class="meet-our__card-title">Kadin Dias</p>
+            <p class="meet-our__card-subtitle">founder, ceo </p>
+          </div>
+        </div>
+
+        <div class="meet-our__card col-4 col-md-12"><img class="meet-our__pic" src="./images/dist/meet/Zain.png"
+            alt="Design">
+          <p class="meet-our__card-title">Zain Calzoni</p>
+          <p class="meet-our__card-subtitle">designer</p>
+        </div>
+        <div class="meet-our__card col-4 col-md-12"><img class="meet-our__pic" src="./images/dist/meet/Charlie.png"
+            alt="Photografer">
+          <p class="meet-our__card-title">Charlie George</p>
+          <p class="meet-our__card-subtitle">photographer</p>
+        </div>
+      </div>
+    
+    </div>
+  </section>
 
 
 
-
-<!--   work -->
-<section class="work">
-  <div class="container">
-    <div class="section-head work__head">
-      <p class="section-head__subtitle">What we do</p>
+  <!--   work -->
+  <section class="work">
+    <div class="container">
+      <div class="section-head work__head">
+        <p class="section-head__subtitle">What we do</p>
         <h2 class="section-head__title">
           some of our work</h2>
-            </div>
-      <p class="section-head__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
-        
+      </div>
+      <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+        lacus. Eget sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue
+        sit fermentum risus feugiat.
+
       </p>
       <div class="content">
         <div class="work-row ">
-          <div class="work-row__item work-row__item-1"><img src="./images/dist/our work/work1.jpg" alt="" ></div>
+          <div class="work-row__item work-row__item-1"><img src="./images/dist/our work/work1.jpg" alt=""></div>
           <div class="work-row__item work-row__item-2"><img src="./images/dist/our work/work2.jpg" alt=""></div>
-          <div class="work-row__item work-row__item_big"><img class="work-row__img work-row__img_big" src="./images/dist//our work/work3.jpg" alt=""></div>
+          <div class="work-row__item work-row__item_big"><img class="work-row__img work-row__img_big"
+              src="./images/dist//our work/work3.jpg" alt=""></div>
           <div class="work-row__item work-row__item-4"><img src="./images/dist/our work/work4.jpg" alt=""></div>
           <div class="work-row__item work-row__item-5"><img src="./images/dist/our work/work5.jpg" alt=""></div>
-          <div class="work-row__item work-row__item_active"><img class="work-row__img work-row__img_active0" src="./images/dist/our work/work6.1.jpg" alt=""><img class="work-row__img_active" src="./images/dist/our work/work6.2.jpg" alt=""></div>
+          <div class="work-row__item work-row__item_active"><img class="work-row__img work-row__img_active0"
+              src="./images/dist/our work/work6.1.jpg" alt=""><img class="work-row__img_active"
+              src="./images/dist/our work/work6.2.jpg" alt=""></div>
           <div class="work-row__item work-row__item-7 "><img src="./images/dist/our work/work7.jpg" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+
 
   <!-- slider-man -->
 
   <section class="author-reviews">
     <div class="container">
       <div class="splide review-slider" id="author-review" aria-labelledby="carousel-heading">
-      
+
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide review-slide">
-  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
-  <div class="review-slide__content">
-    <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-    <p class="review-slide__author">Jon Doe</p>
-  </div>
+              <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
+                  platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet
+                  venenatis, massa sit.</p>
+                <p class="review-slide__author">Jon Doe</p>
+              </div>
             </li>
             <li class="splide__slide review-slide">
-  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
-  <div class="review-slide__content">
-    <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-    <p class="review-slide__author">Deniz</p>
-  </div>
+              <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum , consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <p class="review-slide__author">Deniz</p>
+              </div>
             </li>
             <li class="splide__slide review-slide">
-  <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
-  <div class="review-slide__content">
-    <p class="review-slide__text">Lorem ipsum dolor sit amet,  diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
-    <p class="review-slide__author">Nen Bulk</p>
-  </div>
+              <img class="review-slide__icon" src="./images/dist/reviews/face.jpg" alt="slider">
+              <div class="review-slide__content">
+                <p class="review-slide__text">Lorem ipsum dolor sit amet, diam platea ullamcorper feugiat amet. Id
+                  aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+                <p class="review-slide__author">Nen Bulk</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -443,284 +525,325 @@ amazing services</h2>
   <!-- what -->
 
   <section class="what">
-  <div class="container">
-  <div class="section-head what__head">
-  <p class="section-head__subtitle">Happy Clients</p>
-  <h2 class="section-head__title">
-    what people say</h2>
-  
-  
-  </div>
-  <div class="row">
-  
-  <div class="what__cards col-6 col-md-6 col-sm-12">
-  <div class="what__card">
-  <div class="what__img-wrap">
-  <img class="what__img" src="./images/dist/what/Phillip.jpg" alt="photographer">
-  </div>
-  
-
-  <div class="what__info-panel">
-    <p class="what__card-title">Phillip Culhane</p>
-  <p class="what__card-subtitle">photographer</p>
-  <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
-  </div>
-  </div>
-  </div>
-  <div class="what__cards col-6 col-md-6 col-sm-12">
-  <div class="what__card">
-  <div class="what__img-wrap">
-  <img class="what__img" src="./images/dist/what/Paityn.jpg" alt="photographer">
-  </div>
-  
-
-  <div class="what__info-panel">
-    <p class="what__card-title">Paityn Press </p>
-  <p class="what__card-subtitle">photographer</p>
-  <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
-  </div>
-  </div>
-  </div>
-  <div class="what__cards col-6 col-md-6 col-sm-12">
-  <div class="what__card">
-  <div class="what__img-wrap">
-  <img class="what__img" src="./images/dist/what/Dulce.jpg" alt="photographer">
-  </div>
-  
-
-  <div class="what__info-panel">
-    <p class="what__card-title">Dulce Gouse </p>
-  <p class="what__card-subtitle">photographer</p>
-  <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
-  </div>
-  </div>
-  </div>
-  <div class="what__cards col-6 col-md-6 col-sm-12">
-  <div class="what__card">
-  <div class="what__img-wrap">
-  <img class="what__img" src="./images/dist/what/Zaire.jpg" alt="photographer">
-  </div>
-  
-
-  <div class="what__info-panel">
-    <p class="what__card-title">Zaire Schleifer</p>
-  <p class="what__card-subtitle">photographer</p>
-  <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section> 
-  
-<!-- blog -->
-<section class="blog">
-<div class="container">
-<div class="section-head blog__head">
-<p class="section-head__subtitle">Our Stories</p>
-<h2 class="section-head__title">
-Latest blog</h2>
+    <div class="container">
+      <div class="section-head what__head">
+        <p class="section-head__subtitle">Happy Clients</p>
+        <h2 class="section-head__title">
+          what people say</h2>
 
 
-</div>
-<div class="row">
+      </div>
+      <div class="row">
 
-<div class="blog__card col-4 col-md-6 col-xs-12">
-<div class="blog__card-head">
-<div class="blog__img-wrap">
-<img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
-</div>
-<div class="blog__news-date"><span>15</span>
-jan</div>
-</div>
+        <div class="what__cards col-6 col-md-6 col-sm-12">
+          <div class="what__card">
+            <div class="what__img-wrap">
+              <img class="what__img" src="./images/dist/what/Phillip.jpg" alt="photographer">
+            </div>
 
-<p class="blog__card-title">Lorem ipsum dolor sit amet</p>
-<p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 
-<div class="blog__info-panel">
-<div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg" alt="veiw"><div>542</div></div>
-<div class="blog__comments blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/comments.svg" alt="comments"><div>17</div></div>
+            <div class="what__info-panel">
+              <p class="what__card-title">Phillip Culhane</p>
+              <p class="what__card-subtitle">photographer</p>
+              <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+                proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
+                cursus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="what__cards col-6 col-md-6 col-sm-12">
+          <div class="what__card">
+            <div class="what__img-wrap">
+              <img class="what__img" src="./images/dist/what/Paityn.jpg" alt="photographer">
+            </div>
 
-</div>
-</div>
-<div class="blog__card col-4 col-md-6 col-xs-12">
-<div class="blog__card-head">
-<div class="blog__img-wrap">
-<img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
-</div>
-<div class="blog__news-date"><span>15</span>
-jan</div>
-</div>
 
-<p class="blog__card-title">Lorem ipsum dolor sit amet</p>
-<p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+            <div class="what__info-panel">
+              <p class="what__card-title">Paityn Press </p>
+              <p class="what__card-subtitle">photographer</p>
+              <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+                proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
+                cursus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="what__cards col-6 col-md-6 col-sm-12">
+          <div class="what__card">
+            <div class="what__img-wrap">
+              <img class="what__img" src="./images/dist/what/Dulce.jpg" alt="photographer">
+            </div>
 
-<div class="blog__info-panel">
-<div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg" alt="veiw"><div>542</div></div>
-<div class="blog__comments blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/comments.svg" alt="comments"><div>17</div></div>
 
-</div>
-</div>
-<div class="blog__card col-4 col-md-6 col-xs-12">
-<div class="blog__card-head">
-<div class="blog__img-wrap">
-<img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
-</div>
-<div class="blog__news-date"><span>15</span>
-jan</div>
-</div>
+            <div class="what__info-panel">
+              <p class="what__card-title">Dulce Gouse </p>
+              <p class="what__card-subtitle">photographer</p>
+              <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+                proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
+                cursus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="what__cards col-6 col-md-6 col-sm-12">
+          <div class="what__card">
+            <div class="what__img-wrap">
+              <img class="what__img" src="./images/dist/what/Zaire.jpg" alt="photographer">
+            </div>
 
-<p class="blog__card-title">Lorem ipsum dolor sit amet</p>
-<p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
 
-<div class="blog__info-panel">
-<div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg" alt="veiw"><div>542</div></div>
-<div class="blog__comments blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/comments.svg" alt="comments"><div>17</div></div>
+            <div class="what__info-panel">
+              <p class="what__card-title">Zaire Schleifer</p>
+              <p class="what__card-subtitle">photographer</p>
+              <p class="what__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+                proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo
+                cursus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-</div>
+  <!-- blog -->
+  <section class="blog">
+    <div class="container">
+      <div class="section-head blog__head">
+        <p class="section-head__subtitle">Our Stories</p>
+        <h2 class="section-head__title">
+          Latest blog</h2>
 
-</div>
 
-</div>
-</section> 
+      </div>
+      <div class="row">
+
+        <div class="blog__card col-4 col-md-6 col-xs-12">
+          <div class="blog__card-head">
+            <div class="blog__img-wrap">
+              <img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
+            </div>
+            <div class="blog__news-date"><span>15</span>
+              jan</div>
+          </div>
+
+          <p class="blog__card-title">Lorem ipsum dolor sit amet</p>
+          <p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin
+            varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+
+          <div class="blog__info-panel">
+            <div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg"
+                alt="veiw">
+              <div>542</div>
+            </div>
+            <div class="blog__comments blog__info-block"><img class="blog__info-icon"
+                src="./images/dist/blog/comments.svg" alt="comments">
+              <div>17</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="blog__card col-4 col-md-6 col-xs-12">
+          <div class="blog__card-head">
+            <div class="blog__img-wrap">
+              <img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
+            </div>
+            <div class="blog__news-date"><span>15</span>
+              jan</div>
+          </div>
+
+          <p class="blog__card-title">Lorem ipsum dolor sit amet</p>
+          <p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin
+            varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+
+          <div class="blog__info-panel">
+            <div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg"
+                alt="veiw">
+              <div>542</div>
+            </div>
+            <div class="blog__comments blog__info-block"><img class="blog__info-icon"
+                src="./images/dist/blog/comments.svg" alt="comments">
+              <div>17</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="blog__card col-4 col-md-6 col-xs-12">
+          <div class="blog__card-head">
+            <div class="blog__img-wrap">
+              <img class="blog__img" src="./images/dist/blog/news.jpg" alt="News">
+            </div>
+            <div class="blog__news-date"><span>15</span>
+              jan</div>
+          </div>
+
+          <p class="blog__card-title">Lorem ipsum dolor sit amet</p>
+          <p class="blog__card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin
+            varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+
+          <div class="blog__info-panel">
+            <div class="blog__veiw  blog__info-block"><img class="blog__info-icon" src="./images/dist/blog/veiw.svg"
+                alt="veiw">
+              <div>542</div>
+            </div>
+            <div class="blog__comments blog__info-block"><img class="blog__info-icon"
+                src="./images/dist/blog/comments.svg" alt="comments">
+              <div>17</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
 </main>
 <!--    footer start -->
 <footer class="footer">
 	<div class="container">
-	  <div class="footer__row row">
-		<div class="footer__col col-4 col-md-4 col-xs-12">
-		 <a href="" class="footer__logo-link">
-		  <img class="footer__logo" src="./images/dist/footer/logo.svg" alt="logo">
-		 </a>
-		 <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
-		<div class="footer__media">
-		  <div class="footer__follower-count">
-		   <span class="num">15</span><span class="letter">k</span><span class="cta-txt">followers</span>
-		  </div>
-		  <div class="footer__socials">
-			<span class="footer__media-cta">Follow Us</span>
-			<ul class="footer__social-list">
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/facebook.svg" alt="facebook" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/twitter.svg" alt="twitter" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/insta.svg" alt="instagram" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/pinterest.svg" alt="pinterest" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/linkedin.svg" alt="linkedin" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/youtube.svg" alt="youtube" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/dribble.svg" alt="dribble" class="footer__social-icon">
-			  </a>
-			</li>
-			  <li class="footer__social-item"><a href="" class="footer__social-link">
-				<img src="./images/dist/social-svg/tik-tok.svg" alt="tik-tok" class="footer__social-icon">
-			  </a>
-			</li>
-			</ul>
-		  </div>
-		  
-		</div>
-		<form action="" class="footer__subscribe">
-		  <input  type="text" class="footer__input form-input" placeholder="Your Email">
-		  <input type="submit" class="footer__send-form prime-btn" value="subscribe">
-		</form>
-		</div>
-  
-		  <div class="footer__col col-5 col-md-5 col-xs-12">
-			<p class="footer__col-title">blogs</p>
-			<div class="footer__news">
-			  <div class="news-card footer__news-card">
-				<a class=
-			  "news-card__imag-link" href=""><img src="./images/dist/footer/news1.jpg" alt="news" class="news-card__img"></a>
-			  <div class="news-card__content">
-				<a class="news-card__link" href="#!">
-					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<div class="footer__row row">
+			<div class="footer__col col-4 col-xl-4 col-md-12">
+				<a href="" class="footer__logo-link">
+					<img class="footer__logo" src="./images/dist/footer/logo.svg" alt="logo">
 				</a>
-			  <span class="news-card__date">jan.9.22.15</span>
-			  </div>
-			  </div>
-			  <div class="news-card footer__news-card">
-  <a class="news-card__imag-link" href=""><img src="./images/dist/footer/news2.jpg" alt="news" class="news-card__img"></a>
-			  <div class="news-card__content">
-				<a class="news-card__link" href="#!">
-					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</a>
-			  <span class="news-card__date">jan.9.22.15</span>
-			  </div>
-			  </div>
-			  <div class="news-card footer__news-card">
-	   <a class=
-	  "news-card__imag-link" href="">         <img src="./images/dist/footer/news3.jpg" alt="news" class="news-card__img"></a>
-			  <div class="news-card__content">
-				<a class="news-card__link" href="#!">
-					<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</a>
-			  <span class="news-card__date">jan.9.22.15</span>
-			  </div>
-			  </div>
-  
+				<p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin
+					varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+				</p>
+				<div class="footer__media">
+					<div class="footer__follower-count">
+						<span class="num">15</span><span class="letter">k</span><span class="cta-txt">followers</span>
+					</div>
+					<div class="footer__socials">
+						<span class="footer__media-cta">Follow Us</span>
+						<ul class="footer__social-list">
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/facebook.svg" alt="facebook"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/twitter.svg" alt="twitter"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/insta.svg" alt="instagram"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/pinterest.svg" alt="pinterest"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/linkedin.svg" alt="linkedin"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/youtube.svg" alt="youtube"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/dribble.svg" alt="dribble"
+										class="footer__social-icon">
+								</a>
+							</li>
+							<li class="footer__social-item"><a href="" class="footer__social-link">
+									<img src="./images/dist/social-svg/tik-tok.svg" alt="tik-tok"
+										class="footer__social-icon">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<form action="" class="footer__subscribe">
+					<input type="text" class="footer__input form-input" placeholder="Your Email">
+					<input type="submit" class="footer__send-form prime-btn" value="subscribe">
+				</form>
 			</div>
-		  </div>
-		  <div class="footer__col col-3 col-md-3 col-xs-12">
-			<p class="footer__col-title">instagram</p>
-			<div class="images-gallery">
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst1.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst2.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst3.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst4.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst5.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst6.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst7.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst8.jpg" alt="" class="images-gallery__img">
-			  </div>
-			  <div class="images-gallery__item">
-				<img src="./images/dist/footer/inst9.jpg" alt="" class="images-gallery__img">
-			  </div>
+
+			<div class="footer__col col-5 col-xl-5 col-md-12">
+				<p class="footer__col-title">blogs</p>
+				<div class="footer__news">
+					<div class="news-card footer__news-card">
+						<a class="news-card__img-link" href=""><img src="./images/dist/footer/news1.jpg" alt="news"
+								class="news-card__img"></a>
+						<div class="news-card__content">
+							<a class="news-card__link" href="#!">
+								<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</a>
+							<span class="news-card__date">jan.9.22.15</span>
+						</div>
+					</div>
+					<div class="news-card footer__news-card">
+						<a class="news-card__img-link" href=""><img src="./images/dist/footer/news2.jpg" alt="news"
+								class="news-card__img"></a>
+						<div class="news-card__content">
+							<a class="news-card__link" href="#!">
+								<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</a>
+							<span class="news-card__date">jan.9.22.15</span>
+						</div>
+					</div>
+					<div class="news-card footer__news-card">
+						<a class="news-card__img-link" href=""> <img src="./images/dist/footer/news3.jpg" alt="news"
+								class="news-card__img"></a>
+						<div class="news-card__content">
+							<a class="news-card__link" href="#!">
+								<p class="news-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</a>
+							<span class="news-card__date">jan.9.22.15</span>
+						</div>
+					</div>
+
+				</div>
 			</div>
-			<a href="" class="footer__see-more">see all photos</a>
-		  </div>
+			<div class="footer__col col-3 col-xl-3 col-md-12">
+				<p class="footer__col-title">instagram</p>
+				<div class="images-gallery">
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst1.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst2.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst3.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst4.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst5.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst6.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst7.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst8.jpg" alt="" class="images-gallery__img">
+					</div>
+					<div class="images-gallery__item">
+						<img src="./images/dist/footer/inst9.jpg" alt="" class="images-gallery__img">
+					</div>
+				</div>
+				<a href="" class="footer__see-more">see all photos</a>
+			</div>
 		</div>
-		  <p class="footer__copyright">Copyright © 2021 mogo. All Rights Reserved</p>
-  
-		</div>
-	  </div>
+		<p class="footer__copyright">Copyright © 2021 mogo. All Rights Reserved</p>
+
 	</div>
-  </footer>
-  <!--    footer end -->
-  
-	</body>
-  </html>
+	</div>
+	</div>
+</footer>
+<!--    footer end -->
+
+</body>
+
+</html>
