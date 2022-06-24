@@ -1,37 +1,37 @@
 .footer {
-    padding-top: 80px;
-  }
-  .footer__col {
+  padding-top: 62px;
+  &__col {
     padding-bottom: 42px;
     flex-direction: column;
-  
-  }
-  
-  .footer__logo-link {
-    @include breakpoint(sm) {
-      display: flex;
-    justify-content: center;
+    @include breakpoint(md) {
+      padding-bottom: 10px;
     }
   }
-  .footer__logo {
-  }
-  .footer__desc {
-    font-size: 18px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    color: var(--grey);
-  }
-  .footer__media {
-    @include breakpoint(sm) {
-    
-    }
-  }
-  .footer__follower-count {
-    margin-bottom: 30px;
-    @include breakpoint(sm) {
+
+  &__logo-link {
+    @include breakpoint(md) {
       display: flex;
       justify-content: center;
-      align-items:center;
+    }
+  }
+
+  &__desc {
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--grey);
+  }
+  &__media {
+    @include breakpoint(md) {
+      font-size: 4.35vw;
+    }
+  }
+  &__follower-count {
+    margin-bottom: 30px;
+    @include breakpoint(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .footer__follower-count .num {
@@ -41,8 +41,8 @@
     @include breakpoint(xl) {
       font-size: 30px;
     }
-    @include breakpoint(sm) {
-      font-size: 24px; 
+    @include breakpoint(md) {
+      font-size: 24px;
       line-height: 55px;
     }
   }
@@ -51,9 +51,9 @@
     font-size: 18px;
     font-style: normal;
     text-transform: uppercase;
-    @include breakpoint(sm) {
-    font-size: 14px;
-    line-height: 30px;
+    @include breakpoint(md) {
+      font-size: 4.35vw;
+      line-height: 30px;
     }
   }
   .footer__follower-count .cta-txt {
@@ -61,107 +61,134 @@
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
-    @include breakpoint(sm) {
-    font-size: 14px;
-    line-height: 30px;
+    @include breakpoint(md) {
+      font-size: 14px;
+      line-height: 30px;
     }
   }
-  
-  .footer__socials {
+
+  &__socials {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    @include breakpoint(sm) {
-    // flex-wrap: nowrap;
-    justify-content:space-around;
+    @include breakpoint(md) {
+      // flex-wrap: nowrap;
+      justify-content: space-around;
     }
   }
-  .footer__media-cta {
+  &__media-cta {
     padding-right: 10px;
     font-size: 13px;
     font-style: italic;
     color: #c6cbcd;
+    @include breakpoint(md) {
+      font-size: 3.7vw;
+    }
   }
-  .footer__social-list {
+  &__social-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
-  .footer__social-item {
+  &__social-item {
     margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .footer__social-item:last-child {
-    margin-right: 0;
+  &__social-link {
   }
-  .footer__social-link {
-  }
-  .footer__social-icon {
+
+  &__social-icon {
     width: 20px;
+    @include breakpoint(md) {
+      width: 12px;
+    }
   }
-  .footer__subscribe {
+  &__subscribe {
     display: flex;
     margin-top: 46px;
-    @include breakpoint(sm) {
-    margin-top: 31px;
+    @include breakpoint(md) {
+      margin-top: 31px;
       flex-wrap: wrap;
-    
+    }
   }
-}
-  
-  .footer__input{
+
+  &__input {
     padding: 10px;
     font-size: 18px;
     text-align: center;
     flex-grow: 1;
     width: 100%;
+    color: #c6cbcd;
     cursor: pointer;
-    @include breakpoint(sm) {
-   margin-bottom: 24px;
-   font-size: 14px;
+    @include breakpoint(md) {
+      text-align: left;
+      margin-bottom: 24px;
+      font-size: 4.5vw;
+    }
+    &::placeholder {
+      color: #c6cbcd;
     }
   }
-  .footer__send-form{
+  &__send-form {
     flex-grow: 1;
     text-transform: uppercase;
-    padding:10px 16px;
+    padding: 10px 16px;
     cursor: pointer;
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       margin-bottom: 24px;
       font-size: 14px;
+    }
   }
-}
-  .footer__col-title {
+  &__col-title {
     font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 1.6vw;
+    margin-bottom: 40px;
     text-transform: uppercase;
+    @include breakpoint(xl) {
+      font-size: 2.4vw;
+    }
+    @include breakpoint(md) {
+      font-size: 5.6vw;
+      text-align: center;
+      margin: 25px auto;
+    }
+    &__news-card {
+      margin-bottom: 24px;
+    }
+    &__news-card:last-child {
+      margin-bottom: 0;
+    }
   }
-  .footer__news-card {
-    margin-bottom: 20px;
-  }
-  .footer__news-card:last-child {
-    margin-bottom: 0;
-  }
-  
-  .footer__see-more {
+  &__see-more {
     display: inline-block;
     margin-top: 30px;
     font-size: 13px;
     text-transform: uppercase;
     text-decoration: underline;
     color: var(--black);
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       display: flex;
-     justify-content: center;
+      justify-content: center;
+      font-size: 3.7vw;
+      margin: 35px auto;
     }
   }
-  
-  .footer__copyright {
-    padding: 15px 0;
+
+  &__copyright {
+    text-transform: uppercase;
+    padding: 18px 0;
     text-align: center;
     font-weight: 700;
     font-size: 13px;
-    border-top: 1px solid #C6CBCD;
+    border-top: 1px solid #c6cbcd;
+    @include breakpoint(xl) {
+      font-size: 2.4vw;
+    }
+    @include breakpoint(md) {
+      font-size: 4.2vw;
+    }
   }
-  
+}

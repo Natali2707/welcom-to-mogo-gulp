@@ -39,7 +39,7 @@
 
   &__number {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4.25vw;
     line-height: 1.2;
     margin-bottom: 10px;
   
@@ -51,7 +51,7 @@
   
   &__text {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.6vw;
     line-height: 1.2;
   @include breakpoint(xl) {
       font-weight: 500;

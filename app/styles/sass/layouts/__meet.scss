@@ -1,0 +1,68 @@
+.meet-our {
+  padding: 58px 0;
+
+  &__row {
+    display:inline-flex;
+  }
+
+  &__card {
+    @include breakpoint(md) {
+      min-width: 100%;
+    }
+    &_active {
+      position: relative;
+    }
+
+    &-title {
+      font-weight: 700;
+      text-align: center;
+      padding: 25px;
+      text-transform: uppercase;
+    }
+    &-subtitle {
+      font-weight: 400;
+      font-size: 0.95vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-info {
+      transform: translateY(-440%);
+    }
+  }
+
+  &__pic {
+    @include breakpoint(md) {
+      min-width: 100%;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    &_active {
+    }
+    &_active1 {
+      position: relative;
+      @include breakpoint(md) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_active2 {
+      transform: translate(-5%, -105%);
+      max-width: 100%;
+      opacity: 0.9;
+      @include breakpoint(md) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+}
+.container{
+    margin: 0 auto;
+    max-height: 100%;
+}

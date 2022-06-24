@@ -1,22 +1,55 @@
 .news-card {
   display: flex;
+  @include breakpoint(md) {
+    margin-bottom: 14px;
+  }
+
   &__img-link {
     width: 35%;
+    flex-shrink: 0;
+    @include breakpoint(md) {
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include breakpoint(md) {
+      // aspect-ratio: 1;
+    }
   }
   &__content {
-    padding-left: 30px;
+    padding-left: 34px;
+    @include breakpoint(md) {
+      padding-left: 14px;
+      overflow: hidden;
+      font-size: 4.35vw;
+    }
   }
   &__link {
+    text-decoration: none;
+  }
+  &__title {
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: #2d3033;
-    text-decoration: none;
+    @include breakpoint(md) {
+      line-height: 5.1vw;
+    }
   }
 
   &__date {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.9vw;
+    line-height: 14px;
+    @include breakpoint(xl) {
+      font-size: 1vw;
+    }
+    @include breakpoint(md) {
+      font-size: 3.7vw;
+    }
   }
 }

@@ -1,89 +1,141 @@
-
-.promo {
-    display: flex;
-    padding-top: 177px;
-    padding-bottom: 85px;
-    // height: 100vh;
-    text-align: center;
-    background-image: linear-gradient(
-        360deg,
-        rgba(237, 215, 137, 0.9) 0%,
-        rgba(233, 130, 131, 0.9) 100%
-      ),
-      url("../images/dist/orel.jpg");
-    background-size: cover, cover;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    color: #ffff;
+                     .promo {
+  display: block;
+  padding-top: 177px;
+  padding-bottom: 85px;
+  text-align: center;
+  background-image: linear-gradient(
+      360deg,
+      rgba(237, 215, 137, 0.9) 0%,
+      rgba(233, 130, 131, 0.9) 100%
+    ),
+    url("../images/dist/orel.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  color: #ffff;
 
   @include breakpoint(xl) {
-      padding-top: 120px;                 
-    }
-
-     @include breakpoint(lg) {
-      padding-top: 90px;
-    }
-       @include breakpoint(md) {
-    .promo {
-      padding-top: 20px;
-    }
+    padding-top: 120px;
   }
-  
+
+  @include breakpoint(sm) {
+    padding-top: 90px;
+  }
+&__slider{
+  text-align: center;
+}
+// &__slide_closed{
+//   display: none;
+// }
   &__subtitle {
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
-    font-size: 4.5vw;
+    font-size: 4.25vw;
+    @include breakpoint(xl) {
+      font-size: 4.7vw;
+    }
+    @include breakpoint(md) {
+      font-size: 11vw;
+      line-height: 52px;
+    }
   }
   &__title {
-    padding: 50px 0;
+    padding-top: 50px;
     font-family: "montserrat";
     font-weight: 700;
-    font-size:9.5vw ;
+    font-size: 9.6vw;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 74px;
+    @include breakpoint(xl) {
+      margin-bottom: 49px;
+      }
     @include breakpoint(sm) {
-      font-size:15vw ;
-      margin-bottom: 50px;
+      font-size: 15vw;
+      margin-bottom: 51px;
     }
-    &::after{
-        content: "";
-        display: block;
-        width: 170px;
-        background: #fff;
-        height: 4px;
-        margin: 44px auto 0;
-        @include breakpoint(sm) {
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      background: #fff;
+      height: 4px;
+      margin: 50px auto 0;
+      @include breakpoint(xl) {
+        width: 115px;
+      }
+      @include breakpoint(sm) {
         width: 134px;
-        }
+        margin: 70px auto 0;
       }
     }
+  }
 
   &__link {
     display: inline-block;
     max-width: 370px;
-    // width: 100%;
+    width: 100%;
     font-family: "Raleway";
     font-weight: 700;
     padding: 25px 60px;
-    margin-bottom: 77px;
-    font-size: 24px;
+    margin-bottom: 116px;
+    font-size: 1.6vw;
     text-decoration: none;
     text-transform: uppercase;
     border: 1px #fff solid;
-    color: #ffffff;
+    color: #ffffff; 
     transition: 0.3s;
-    @include breakpoint(sm) {
-    // width: 284px;
-    // width: 100%;
-    font-size: 18px;
-    max-width: 225px;
-    margin: 0 10px;
-    padding:15px 30px;
+    @include breakpoint(xl) {
+      max-width: 317px;
+      margin-bottom: 79 px;
     }
-   
+    @include breakpoint(sm) {
+      max-width: calc(100% - var(--gutter) * 2);
+      margin: 0 10px;
+      padding: 15px 30px;
+      margin-bottom: 53px;
+    }
+
     &:hover {
       background: #fff;
       color: #f4bf87;
+    }
+  }
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(xl) {
+
+    }
+    @include breakpoint(md) {
+ 
+    }
+    li {
+      width: 22%;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      background: transparent;
+      font-size: 2.4vw;
+      color: #fff;
+      @include breakpoint(md) {
+    font-size: 0vw;
+        }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    button::before {
+      content: "";
+      display: block;
+      margin-bottom: 30px;
+      height: 4px;
+      background: #fff;
+      @include breakpoint(xl) {
+        margin-bottom: 25px;
+      }
     }
   }
 }

@@ -4,12 +4,13 @@
     top: 0;
     left: 0;
     right: 0;
+   z-index: 3;
     padding-top: 20px;
     padding-bottom: 20px;
   &_has-bg {
     background: rgb(142, 140, 140);
-    z-index: 9;
   }
+  
 &__menu-item_active .header__menu-link {
     color: #f4bf87;
     position: relative;
@@ -49,6 +50,7 @@
     &_opened{
       @include breakpoint(md) {
       display: block;
+      max-height: 100vw;
       position: fixed;
       left: 0;
       right: 0;
@@ -63,7 +65,8 @@
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-      .header__menu{
+      
+    .header__menu{
         flex-direction: column;
         height: 100%;
         align-items:center ;
@@ -128,35 +131,24 @@
     color: #f4bf87;
   }
 }
-&__burger,
-&__burger-close{
-  position: absolute;
-  right: 0;
+&__burger{
   display: none;
-  background: transparent;
-  border: none;
-   @include breakpoint(md) {
-  display: block;
-  align-items: flex-end;
-   }
-   &:hover{
-     display: block;
-     opacity: 0.5;
-   }
-}
-
-&__burger-close{
-   align-items: flex-end;
-   display: none;  
-   position: absolute;
-  right: 0;
-  transform: translateX(-20%);
-   background:transparent;
-   border: none;
-&:hover{
+  @include breakpoint(md) {
+    display: flex;
+      margin-left: auto;
+  }
+  &:hover{
     display:block ;
     z-index: 2;
     opacity: 0.5;
  }
+}
+
+
+&__burger-close{
+  transform: translateX(-20%);
+   background:transparent;
+   border: none;
+
  }
 }
