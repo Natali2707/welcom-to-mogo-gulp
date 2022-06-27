@@ -131,24 +131,40 @@
     color: #f4bf87;
   }
 }
-&__burger{
+&__burger {
   display: none;
+
   @include breakpoint(md) {
     display: flex;
-      margin-left: auto;
+    margin-left: auto;
   }
-  &:hover{
-    display:block ;
-    z-index: 2;
-    opacity: 0.5;
- }
 }
+// &__burgers{
+//   position: relative;
+// }
+// &__burger{
+//   display: none;
+//   position: relative;
+//   border: none;
+//   background: transparent;
+//   @include breakpoint(md) {
+//     display: flex;
+//       margin-left: auto;
+//   }
+//   &:hover{
+//     display:block ;
+//     z-index: 2;
+//     opacity: 0.5;
+//  }
 
+// &-close{
+//   position: absolute;
+//   border: none;
+//   background: transparent;
+//   &:checked{
+//    opacity: 0;
+//   }
 
-&__burger-close{
-  transform: translateX(-20%);
-   background:transparent;
-   border: none;
-
- }
+//  }
+// }
 }

@@ -1,4 +1,4 @@
-                     .promo {
+.promo {
   display: block;
   padding-top: 177px;
   padding-bottom: 85px;
@@ -21,12 +21,12 @@
   @include breakpoint(sm) {
     padding-top: 90px;
   }
-&__slider{
-  text-align: center;
-}
-// &__slide_closed{
-//   display: none;
-// }
+  &__slider {
+    text-align: center;
+  }
+  // &__slide_closed{
+  //   display: none;
+  // }
   &__subtitle {
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
@@ -34,7 +34,7 @@
     @include breakpoint(xl) {
       font-size: 4.7vw;
     }
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
       font-size: 11vw;
       line-height: 52px;
     }
@@ -48,10 +48,10 @@
     margin-bottom: 74px;
     @include breakpoint(xl) {
       margin-bottom: 49px;
-      }
+    }
     @include breakpoint(sm) {
       font-size: 15vw;
-      margin-bottom: 51px;
+      margin-bottom: 50px;
     }
     &::after {
       content: "";
@@ -82,7 +82,7 @@
     text-decoration: none;
     text-transform: uppercase;
     border: 1px #fff solid;
-    color: #ffffff; 
+    color: #ffffff;
     transition: 0.3s;
     @include breakpoint(xl) {
       max-width: 317px;
@@ -93,6 +93,7 @@
       margin: 0 10px;
       padding: 15px 30px;
       margin-bottom: 53px;
+      font-size: 5.6vw;
     }
 
     &:hover {
@@ -105,10 +106,8 @@
     justify-content: space-between;
 
     @include breakpoint(xl) {
-
     }
     @include breakpoint(md) {
- 
     }
     li {
       width: 22%;
@@ -121,8 +120,8 @@
       font-size: 2.4vw;
       color: #fff;
       @include breakpoint(md) {
-    font-size: 0vw;
-        }
+        font-size: 0vw;
+      }
       &:hover {
         opacity: 0.6;
       }
@@ -133,9 +132,26 @@
       margin-bottom: 30px;
       height: 4px;
       background: #fff;
-      @include breakpoint(xl) {
-        margin-bottom: 25px;
-      }
+      animation-name: line-pagination;
+      animation-duration: 5s;
+      animation-iteration-count:infinite;
+      // @include breakpoint(xl) {
+      //   margin-bottom: 25px;
+     
+      // }
     }
+  }
+}
+@keyframes line-pagination {
+  0%{
+left:0;
+    background-color:pink;
+  }
+  50%{
+     background-color:var(--accent);
+  }
+  100%{
+     left:500px;
+   background-color:palegoldenrod;
   }
 }

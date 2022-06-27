@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// console.log(slideTitles);
 
 	const promoSlider = new Splide(".promo__slider", {
-		speed: 10000,
+		speed: 50000,
 		slidesToShow: 1,
 		adaptiveHeight: true,
 		adaptiveWidth: true,

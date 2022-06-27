@@ -13,6 +13,11 @@
       margin-bottom: 40px;
     }
   }
+//   &__row{
+//     @include breakpoint(md) {
+//  flex-direction: column;
+//     }
+//   }
   &__card {
     margin-bottom: 70px;
     margin-top: 70px;
@@ -20,6 +25,9 @@
     @include breakpoint(xl) {
       margin-bottom: 30px;
       margin-top: 30px;
+    }
+    @include breakpoint(md) {
+justify-content: center;
     }
   }
 

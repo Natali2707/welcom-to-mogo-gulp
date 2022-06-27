@@ -3,11 +3,13 @@
   &-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
+    grid-template-areas:
+      "item-1 item-2 item_big item-4"
+      "item-5 item_active item_big item-7";
     @include breakpoint(md) {
-      display: inline-grid;
       grid-template-columns: repeat(2, 1fr);
+      // grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: 1fr 1fr 1fr 1fr minmax(152px, 1fr);
       grid-template-areas:
         "item-1 item_big"
         "item-5 item_big"
@@ -15,86 +17,67 @@
         "item-4 item-2"
         "item_active item_active";
     }
+
     &__item {
       height: auto;
       width: 100%;
       object-fit: cover;
-      justify-items: stretch;
-      &-1 {
-        @include breakpoint(md) {
-          grid-area: item-1;
-        }
+      &:hover {
+        opacity: 0.7;
       }
 
-      &-2 {
-        @include breakpoint(md) {
-          grid-area: item-2;
-        }
-      }
       &_big {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 3;
-        @include breakpoint(md) {
-          grid-row-start: 1;
-          grid-row-end: 4;
-          grid-column-start: 2;
-          grid-column-end: 3;
-          min-height: 100%;
-          grid-area: item_big;
-        }
+        grid-area: item_big;
       }
 
-      &-4 {
-        @include breakpoint(md) {
-          grid-area: item-4;
-        }
-      }
-      &-5 {
-        @include breakpoint(md) {
-          grid-area: item-5;
-        }
-      }
       &_active {
-        @include breakpoint(md) {
-          grid-area: item_active;
-        }
-      }
-      &-7 {
-        @include breakpoint(md) {
-          grid-area: item-7;
-        }
-      }
-      &_active {
+        grid-area: item_active;
         position: relative;
       }
     }
 
-    &__img_active0 {
-      position: absolute;
-      width: 100%;
-      @include breakpoint(md) {
-        display: none;
+    &-1 {
+      grid-area: item-1;
+    }
+
+    &-2 {
+      grid-area: item-2;
+    }
+
+    &__img {
+      &_big {
+        height: 100%;
       }
-      &:hover {
-        display: none;
-      }
+
       &_active {
+        position: absolute;
+        opacity: 0.9;
         @include breakpoint(md) {
-          display: block;
+          display: none;
+        }
+        &:hover {
+          opacity: 0;
+        }
+      }
+      &_active0 {
+        position: absolute;
+        @include breakpoint(md) {
           width: 100%;
+          height: 100%;
         }
       }
     }
-    &__img_big {
-      height: 100%;
+
+    &-4 {
+      grid-area: item-4;
     }
-    &__img_active {
-      @include breakpoint(md) {
-        width: 100%;
-        height: calc(100% / 2);
-      }
+
+    &-5 {
+      grid-area: item-5;
+    }
+
+    &_7 {
+      grid-area: item-7;
     }
   }
 }

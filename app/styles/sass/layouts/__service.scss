@@ -1,4 +1,5 @@
 .service {
+  padding-top: 25px;
   padding-bottom: 114px;
   @include breakpoint(xl) {
     padding-bottom: 88px;
@@ -43,7 +44,7 @@
     &__trigger {
       display: block;
       padding: 33px;
-      border: 1px solid grey;
+      border: 1px solid gray;
       font-weight: 700;
       font-size: 1.6vw;
       line-height: 28px;
@@ -73,6 +74,7 @@
           21px;
         background-size: auto 36px;
       }
+      
     }
 
     &__content {

@@ -1,49 +1,83 @@
 .design {
-    padding-top: 42px;
-    padding-bottom: 57px;
-    margin-bottom: 99px;
-    background: url(../images/dist/design/bg.png);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-@include breakpoint(xl) {
+  padding-top: 42px;
+  padding-bottom: 57px;
+  margin-bottom: 42px;
+  background: url(../images/dist/design/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include breakpoint(xl) {
     padding-top: 28px;
     padding-bottom: 38px;
-    margin-bottom: 86px;
-@include breakpoint(md) {
-    padding-top: 43px;
-    padding-bottom: 25px;
-    margin-bottom: 52px;
-}
-}
-    &__head {
+    margin-bottom: 27.4px;
+    @include breakpoint(md) {
+      padding-top: 43px;
+      padding-bottom: 29px;
+      margin-bottom: 25px;
+    }
+  }
+  &-head {
     margin-bottom: 59px;
     @include breakpoint(xl) {
-        margin-bottom: 40px;
-    } 
+      margin-bottom: 40px;
+    }
     @include breakpoint(md) {
-        margin-bottom: 37 px;
-    } 
+      margin-bottom: 37 px;
     }
-    &__img-wrap {
-        position: relative;
-        display: flex; 
-        max-width: 1170px;
-        justify-content: center;
+    &__title{
+      @include breakpoint(sm) {
+      font-size: 7.5vw;
+      font-weight: 900;
+      }
     }
+    &__subtitle{
+      @include breakpoint(sm) {
+        font-size: 7.5vw;
+      font-weight: 400;
+      }
+    }
+  }
+  &__img-wrap {
+    position: relative;
+    display: block;
+    width: calc(1170px / 12 * 7);
+    margin: 0 auto;
+    @include breakpoint(xl) {
+      width: calc(793px / 12 * 7);
+    }
+    @include breakpoint(sm) {
+      width: 286px;
+    }
+  }
 
-    &__pc-img {
-  width: calc(100% - var(--gutter) * 6);
+  &__pc-img {
+    justify-content: center;
+    width: calc(1170px / 12 * 7);
+    height: 525px;
+    @include breakpoint(xl) {
+      width: calc(793px / 12 * 7);
+      height: 356px;
     }
-
-    &__phone-img {
-        position: absolute;
-        width: 25%;
-        height: 75%;
-        bottom: -15%;
-        right: -5%;
-        margin-right: 40px;
+      @include breakpoint(sm) {
+        width: 286px;
+        height: 219px;
+      }
     }
+  
 
+  &__phone-img {
+    position: absolute;
+    width: calc(1170px / 12 * 7 * 0.29);
+    height: 78%;
+    right: 0;
+    bottom: 0;
+    transform: translate(25%, 24.5%);
+    @include breakpoint(xl) {
+      width: calc(793px / 12 * 7 * 0.29);
+    }
+    @include breakpoint(sm) {
+      width: calc(286px * 0.297);
+      transform: translate(-34%, 30%);
+    }
+  }
 }
-
