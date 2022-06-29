@@ -139,32 +139,4 @@
     margin-left: auto;
   }
 }
-// &__burgers{
-//   position: relative;
-// }
-// &__burger{
-//   display: none;
-//   position: relative;
-//   border: none;
-//   background: transparent;
-//   @include breakpoint(md) {
-//     display: flex;
-//       margin-left: auto;
-//   }
-//   &:hover{
-//     display:block ;
-//     z-index: 2;
-//     opacity: 0.5;
-//  }
-
-// &-close{
-//   position: absolute;
-//   border: none;
-//   background: transparent;
-//   &:checked{
-//    opacity: 0;
-//   }
-
-//  }
-// }
 }

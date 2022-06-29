@@ -1,126 +1,137 @@
 .blog {
-    padding: 84px 0;
-  }
-  
+  padding-top: 84px;
+  padding-bottom: 88px;
+
   @include breakpoint(xl) {
-    .blog {
-      padding: 58px 0;
+    padding-top: 58px;
+    padding-bottom: 61px;
+  }
+
+  @include breakpoint(sm) {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+  &__row {
+    max-width: calc(1170px + var(--gutter) * 2);
+  }
+
+  &__card {
+    @include breakpoint(md) {
+      margin-bottom: 50px;
+    }
+
+    @include breakpoint(sm) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      @include breakpoint(md) {
+        margin-bottom: 0;
+      }
     }
   }
-     @include breakpoint(sm) {
-    .blog {
-      padding: 30px 0;
-    }
-  }
-  .blog__card {
-    margin: 0 var(--gutter);
-  }
-       @include breakpoint(md) {
-    .blog__card {
-      margin-bottom:50px;
-    }
-  }
-     @include breakpoint(sm) {
-    .blog__card {
-      margin-bottom:30px;
-    }
-  }
-  .blog__head {
+  &__head {
     margin-bottom: 42px;
+    @include breakpoint(xl) {
+      margin-bottom: 36px;
+    }
   }
-  
-  .blog__card-head {
+
+  &__card-head {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    @include breakpoint(xl) {
+      margin-bottom: 26px;
+    }
   }
-  .blog__img-wrap {
+  &__img-wrap {
     position: relative;
     padding-bottom: 68%;
     overflow: hidden;
   }
-  .blog__img {
+  &__img {
     position: absolute;
     width: 100%;
     min-height: 100%;
     min-width: 100%;
   }
-  
-  .blog__news-date {
+
+  &__news-date {
     position: absolute;
-    bottom: 25px;
-    left: -14px;
+    bottom: 9.9%;
+    left: -3.7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 21.6%;
+    height: 31.6%;
     background: var(--blue);
     line-height: 30px;
     color: #ffffff;
     font-size: 18px;
     text-transform: uppercase;
-  }
-  
-  @include breakpoint(xl) {
-    .blog__news-date {
-      width: 68px;
-    height: 68px;
-    font-size: 14px;
+
+    @include breakpoint(xl) {
+      font-size: 1.4vw;
+    }
+    @include breakpoint(sm) {
+      font-size: 4.35vw;
+      width: 23%;
+      left: 0;
     }
   }
-  .blog__news-date span {
+  &__news-date span {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.4vw;
     margin-bottom: 5px;
-  }
-  
-  @include breakpoint(xl) {
-    .blog__news-date span {
-      font-size: 24px;}
+    margin-top: 5px;
+
+    @include breakpoint(xl) {
+      font-size: 24px;
     }
-  .blog__card-title {
-    margin-bottom: 15px;
+
+    @include breakpoint(sm) {
+      font-size: 7.5vw;
+    }
+  }
+
+  &__card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
   }
-  
+
   @include breakpoint(xl) {
-    .blog__card-title{
-      font-size: 18px;
-    }
+    font-size: 18px;
   }
-  
-  .blog__card-descr {
+
+  &__card-descr {
     font-size: 18px;
     line-height: 21px;
   }
   @include breakpoint(xl) {
-    .blog__card-descr {
-      font-size: 14px;
-    }
+    font-size: 14px;
   }
-  .blog__info-panel {
+  &__info-panel {
     display: flex;
     margin-top: 22px;
     flex-wrap: wrap;
   }
-  
+
   .blog__info-block {
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 11%;
     font-size: 13px;
   }
-  
-  @include breakpoint(xl) {
+
+  @include breakpoint(sm) {
     .blog__info-block {
       font-size: 12px;
     }
-    }
+  }
   .blog__info-block:last-child {
     margin-right: 0;
   }
@@ -129,3 +140,4 @@
     width: 32px;
     flex-shrink: 0;
   }
+}

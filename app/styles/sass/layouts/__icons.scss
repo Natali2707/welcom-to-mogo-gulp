@@ -1,0 +1,87 @@
+.icons {
+  padding: 42px 0;
+  margin-bottom: 84px;
+  background: #F8F8F8;
+ 
+  @include breakpoint(xl) {
+    padding: 28px 0;
+    margin-bottom: 58px;
+  }
+  @include breakpoint(sm) {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  margin-bottom: 29px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    height: 70px;
+    width: 70px;
+    @include breakpoint(xl) {
+      height: 60px;
+      width: 60px;
+    }
+    @include breakpoint(sm) {
+      height: 86px;
+      width: 86px;
+    }
+  }
+
+  &__img {
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card-1 {
+    @include breakpoint(sm) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+
+  &__card-2 {
+    @include breakpoint(sm) {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+  }
+
+  &__card-3 {
+    @include breakpoint(sm) {
+      grid-row: 3/4;
+      grid-column: 3/4;
+    }
+  }
+
+  &__card-4 {
+    @include breakpoint(sm) {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+  }
+  &__card-5 {
+    @include breakpoint(sm) {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+  }
+
+  &__card-6 {
+    @include breakpoint(sm) {
+      grid-row: 6/7;
+      grid-column: 2/3;
+    }
+  }
+}
+

@@ -2,7 +2,7 @@
   padding-top: 50px;
   padding-bottom: 20px;
   @include breakpoint(xl) {
-    padding-top: 28px;
+    padding-top: 35px;
     padding-bottom: 28px;
   }
 
@@ -13,11 +13,7 @@
       margin-bottom: 40px;
     }
   }
-//   &__row{
-//     @include breakpoint(md) {
-//  flex-direction: column;
-//     }
-//   }
+
   &__card {
     margin-bottom: 70px;
     margin-top: 70px;
@@ -32,15 +28,20 @@ justify-content: center;
   }
 
   &__card-img {
-    padding-right: 38px;
+    margin-right: 38px;
     align-self: flex-start;
     width: 70px;
+    height: 70px;
     flex-shrink: 0;
     @include breakpoint(xl) {
-      padding-right: 28px;
+      margin-right: 30px;
+      width: 59px;
+      height: 59px;
     }
     @include breakpoint(md) {
-      padding-right: 28px;
+      margin-right: 28px;
+      width: 45px;
+    height: 44px;
     }
   }
 

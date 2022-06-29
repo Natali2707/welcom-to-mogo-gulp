@@ -1,11 +1,19 @@
 .news-card {
   display: flex;
-  @include breakpoint(md) {
+  margin-bottom: 20px;
+  @include breakpoint(xl) {
     margin-bottom: 14px;
+  }
+  @include breakpoint(md) {
+    width: calc(100% / 12 * 12 + var(--gutter) * 2);
+    }
+
+  &__news-card:last-child {
+    margin-bottom: 0;
   }
 
   &__img-link {
-    width: 35%;
+    width: 29%;
     flex-shrink: 0;
     @include breakpoint(md) {
     }
@@ -15,7 +23,6 @@
     height: 100%;
     object-fit: cover;
     @include breakpoint(md) {
-      // aspect-ratio: 1;
     }
   }
   &__content {
@@ -31,13 +38,16 @@
   }
   &__title {
     font-weight: 700;
-    font-size: 18px;
     line-height: 1.2;
     margin-bottom: 5px;
     text-transform: uppercase;
     color: #2d3033;
+    @include breakpoint(xl) {
+    font-size: 1.4vw;
+    }
     @include breakpoint(md) {
       line-height: 5.1vw;
+      font-size: 4.35vw;
     }
   }
 
@@ -46,7 +56,7 @@
     font-size: 0.9vw;
     line-height: 14px;
     @include breakpoint(xl) {
-      font-size: 1vw;
+      font-size: 1.2vw;
     }
     @include breakpoint(md) {
       font-size: 3.7vw;

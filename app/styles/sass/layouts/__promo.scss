@@ -1,7 +1,7 @@
 .promo {
   display: block;
   padding-top: 177px;
-  padding-bottom: 85px;
+  padding-bottom: 25px;
   text-align: center;
   background-image: linear-gradient(
       360deg,
@@ -24,9 +24,7 @@
   &__slider {
     text-align: center;
   }
-  // &__slide_closed{
-  //   display: none;
-  // }
+ 
   &__subtitle {
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
@@ -133,8 +131,17 @@
       height: 4px;
       background: #fff;
       animation-name: line-pagination;
-      animation-duration: 5s;
+      animation-duration: 15s;
       animation-iteration-count:infinite;
+      background: linear-gradient(
+    to right,
+    var(--accent) 0,
+    var(--accent) 50%,
+    palegoldenrod 50%,
+    palegoldenrod 100%
+  );
+  background-size: 200%;
+  background-position: right;
       // @include breakpoint(xl) {
       //   margin-bottom: 25px;
      
@@ -143,15 +150,16 @@
   }
 }
 @keyframes line-pagination {
+
   0%{
 left:0;
-    background-color:pink;
+    background-position: right;
   }
-  50%{
-     background-color:var(--accent);
+   50%{
+    background-position: left;
   }
   100%{
-     left:500px;
-   background-color:palegoldenrod;
+     background-position: left;
   }
+
 }

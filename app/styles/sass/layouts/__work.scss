@@ -8,8 +8,7 @@
       "item-5 item_active item_big item-7";
     @include breakpoint(md) {
       grid-template-columns: repeat(2, 1fr);
-      // grid-template-rows: repeat(5, 1fr);
-      grid-template-rows: 1fr 1fr 1fr 1fr minmax(152px, 1fr);
+      grid-template-rows: repeat(5, 1fr);
       grid-template-areas:
         "item-1 item_big"
         "item-5 item_big"
